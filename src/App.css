@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  font-family: lato;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.sign-container {
+  margin-top: 7rem;
+}
+
+.sign-in-image {
+  background-color: #4d0695;
+  position: relative;
+  overflow: hidden;
+}
+.sign-in-image img {
+  position: relative !important;
+  width: 100%;
+  top: 18%;
+}
+
+form .h3, form h5 {
+  width: 100%;
+  text-align: center;
+  line-height: 0.5rem;
+}
+form .form-outline input:focus {
+  box-shadow: none;
+  outline: #4d0695;
+}
+form div label {
+  margin-bottom: 0.5rem;
+}
+form .forget-password {
+  margin-bottom: 2rem;
+}
+form .btn-container .btn {
+  color: white;
+  background-color: #4d0695;
+  width: 100%;
+}
+form .btn-container .btn:hover {
+  background-color: #4d0695;
+  color: white;
+  opacity: 0.9;
+}
+form .forget-password {
+  display: flex;
+  justify-content: space-between;
+}
+form .register-link {
+  text-align: center;
+  padding: 0;
+}
+
+.navbar-container {
+  border-block: solid 0.5rem #4d0695;
+  padding-inline: 110px;
+  padding-block: 5px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1000 !important;
+}
+.navbar-container .navbar-log-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px #4d0695 solid;
+}
+.navbar-container .navbar-log-container a img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 350px) {
+  .forget-password {
+    display: block;
+  }
+}/*# sourceMappingURL=App.css.map */

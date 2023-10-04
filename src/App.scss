@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  font-family:lato;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+} 
+
+$purple-color: #4d0695;
+$white-color:  white;
+
+.sign-container{
+  margin-top: 7rem;
+}
+.sign-in-image{
+  background-color: $purple-color;
+  position: relative;
+  overflow: hidden;
+  
+img{
+  position: relative !important;
+  width: 100%;
+  top: 18%;
+}
+}
+
+form{
+.h3,h5{
+    width: 100%;
+    text-align: center;
+    line-height: 0.5rem;
+   
+  }
+  
+.form-outline input:focus{
+  box-shadow: none;
+  outline:  $purple-color;
+}
+  div label{
+    margin-bottom: 0.5rem;
+  }
+  
+.forget-password{
+  margin-bottom: 2rem;
+}
+
+
+.btn-container .btn{
+  color:  $white-color;
+  background-color:   $purple-color;
+  width: 100%;
+}
+
+.btn-container .btn:hover{
+  background-color:   $purple-color;
+  color: $white-color;
+  opacity: 0.9;
+}
+
+.forget-password{
+  display: flex;
+  justify-content: space-between;
+}
+
+.register-link{
+  text-align: center;
+  padding: 0;
+}
+}
+
+.navbar-container{
+  border-block: solid 0.5rem $purple-color;
+  padding-inline: 110px;
+  padding-block: 5px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: $white-color;
+  z-index: 1000 !important;
+
+  .navbar-log-container{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px $purple-color solid;
+    a img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+ 
+
+@media(max-width:350px){
+ 
+.forget-password{
+  display: block;
+}
+}
