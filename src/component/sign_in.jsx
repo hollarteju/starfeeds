@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -12,17 +13,18 @@ const SignInPage =()=>{
                         <div class="card">
                              <div class="row g-0">
                                 <div class="col-md-6 col-lg-5 d-none d-md-block sign-in-image">
-                                    <img src="log_in_pic.png" alt="login form"/>
+                                    <img src="log_in_pic.png" />
                                 </div> 
                                     <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                         <div class="card-body p-4 p-lg-5 mx-4 text-black">
 
                                             <form>
-                                                <div class="d-flex align-items-center align-text-center mb-3 pb-1">
-                                                    <span class="h3 fw-bold mb-0">Login</span>
+                                                <div class="d-flex align-items-center align-text-center mb-5 pb-1" className="login_logo">
+                                                    <span>Login</span>
+                                                    <p>Enter your valid details to login</p>
                                                 </div>
-                                                <h5 class="fw-normal mb-3 pb-3">Enter your valid details to login</h5>
-                                                <div class="form-outline mb-4">
+                                                
+                                                <div class="form-outline mb-4" >
                                                     <label htmlFor="username">Username</label>
                                                     <input type="text" id="form2Example17" class="form-control form-control-m" name="username" placeholder="0000000654678" />
                                                         
@@ -44,7 +46,7 @@ const SignInPage =()=>{
                                                 </div>
                                                           
                                                 <p class="mb-5 pb-lg-2 text-align-center" className="register-link">Don't have an account?
-                                                    <a href="sign_up"  >  Register Here</a>
+                                                    <Link to="/sign_up"><a>  Register Here</a></Link>
                                                 </p>
                                                                
                                             </form>

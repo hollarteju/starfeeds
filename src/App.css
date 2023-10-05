@@ -1,63 +1,26 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: lato;
+  font-family: "lato";
   padding: 0;
   list-style: none;
   text-decoration: none;
+  outline: 0;
+  box-sizing: border-box;
+  border: 0;
 }
 
-.sign-container {
-  margin-top: 7rem;
-}
-
-.sign-in-image {
-  background-color: #4d0695;
-  position: relative;
-  overflow: hidden;
-}
-.sign-in-image img {
-  position: relative !important;
+img {
   width: 100%;
-  top: 18%;
-}
-
-form .h3, form h5 {
-  width: 100%;
-  text-align: center;
-  line-height: 0.5rem;
-}
-form .form-outline input:focus {
-  box-shadow: none;
-  outline: #4d0695;
-}
-form div label {
-  margin-bottom: 0.5rem;
-}
-form .forget-password {
-  margin-bottom: 2rem;
-}
-form .btn-container .btn {
-  color: white;
-  background-color: #4d0695;
-  width: 100%;
-}
-form .btn-container .btn:hover {
-  background-color: #4d0695;
-  color: white;
-  opacity: 0.9;
-}
-form .forget-password {
-  display: flex;
-  justify-content: space-between;
-}
-form .register-link {
-  text-align: center;
-  padding: 0;
+  height: 100%;
+  align-self: center;
 }
 
 .navbar-container {
   border-block: solid 0.5rem #4d0695;
-  padding-inline: 110px;
+  padding-left: 110px;
   padding-block: 5px;
   position: fixed;
   width: 100%;
@@ -77,6 +40,81 @@ form .register-link {
   height: 100%;
 }
 
+.sign-container {
+  margin-top: 7rem;
+}
+
+.sign-in-image {
+  background-color: #4d0695;
+  position: relative;
+  overflow: hidden;
+}
+.sign-in-image img {
+  position: relative !important;
+  width: 100%;
+  top: 18%;
+}
+
+form .login_logo {
+  text-align: center;
+  width: 100%;
+}
+form .login_logo span {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+form .login_logo p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+form .form-outline input {
+  padding: 8px 12px 8px 16px;
+}
+form .form-outline input::-moz-placeholder {
+  color: #CBD2E0;
+}
+form .form-outline input::placeholder {
+  color: #CBD2E0;
+}
+form .form-outline label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+form .form-outline input:focus {
+  box-shadow: none;
+  outline: #4d0695;
+}
+form .forget-password {
+  margin-bottom: 2rem;
+}
+form .btn-container .btn {
+  color: white;
+  background-color: #4d0695;
+  width: 100%;
+  padding: 20px 10px;
+}
+form .btn-container .btn:hover {
+  background-color: #4d0695;
+  color: white;
+  opacity: 0.9;
+}
+form .forget-password {
+  display: flex;
+  justify-content: space-between;
+}
+form .register-link {
+  text-align: center;
+  padding: 0;
+}
+
+@media (max-width: 425px) {
+  .navbar-container {
+    padding-left: 40px;
+  }
+}
 @media (max-width: 350px) {
   .forget-password {
     display: block;

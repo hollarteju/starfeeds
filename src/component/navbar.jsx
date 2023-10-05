@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Navbar= ()=>{
     return(
         <div class="navbar navbar-expand-lg bg-body-tertiary" className="navbar-container">
             <div class="container-fluid px-0" className="navbar-log-container">
-                <a className="navbar-brand fs-4  fw-bold"href=""><img src="StarFeeds.png" alt="" /></a>
+                <Link to="/"><img src="StarFeeds.png" alt="" /></Link>
             </div>
           
         </div>
