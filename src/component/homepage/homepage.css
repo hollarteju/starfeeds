@@ -8,10 +8,10 @@ img {
   height: 100%;
 }
 
-.header-container {
+.home-header-container {
   top: 90px;
   position: relative;
-  width: 100%;
+  width: 100% !important;
 }
 
 .home-page-header-container {
@@ -23,6 +23,7 @@ img {
   background-position: center;
   text-align: center;
   padding-top: 5px;
+  display: block !important;
 }
 .home-page-header-container .home-page-header-layer {
   display: flex;
@@ -241,4 +242,30 @@ img {
   height: 71px;
   border: 1px #4d0695 solid;
   align-self: center;
+}
+
+@media (max-width: 739px) {
+  .home-page-header-container {
+    width: 200% !important;
+  }
+}
+@media (max-width: 360px) {
+  .home-page-header-container {
+    width: 250% !important;
+  }
+}
+@media (max-width: 300px) {
+  .home-page-header-container {
+    width: 300% !important;
+  }
+}
+@media (max-width: 244px) {
+  .home-page-header-container {
+    width: 350% !important;
+  }
+}
+@media (max-width: 214px) {
+  .home-page-header-container {
+    width: 400% !important;
+  }
 }/*# sourceMappingURL=homepage.css.map */

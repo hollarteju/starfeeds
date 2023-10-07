@@ -10,7 +10,7 @@ function HomePageHeader(){
     setToggle(header)
 }
     return(
-    <div className="header-container"> 
+    <div className="home-header-container d-block"> 
         <div className="home-page-header-container">
             <img src="Frame.png" alt="" />
             <div className="home-page-header-layer">
