@@ -22,7 +22,7 @@ img {
   border-block: solid 0.5rem #4d0695;
   padding-left: 110px;
   padding-block: 5px;
-  position: fixed;
+  position: fixed !important;
   width: 100%;
   top: 0;
   right: 0;
@@ -118,5 +118,10 @@ form .register-link {
 @media (max-width: 350px) {
   .forget-password {
     display: block;
+  }
+}
+@media (max-width: 375px) {
+  .navbar-container {
+    padding-left: 20px;
   }
 }/*# sourceMappingURL=App.css.map */

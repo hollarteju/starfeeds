@@ -2,10 +2,10 @@ import React from "react";
 
 export const Feeds=()=>{
     return(
-    <div className="feeds-container ">
+    <div className="feeds-container">
         <div className="users-feeds-container">
             <div id="search-input">
-                <i>o</i>
+                <i class="bc bx-search bx-rotate-90"></i>
                 <input type="text" placeholder="Search Record"/>
             </div>
             <div className="feeds-users-text-field-container">
@@ -33,8 +33,8 @@ export const Feeds=()=>{
                     </div>
                     <div id="comment-icons">
                         <i>Posted 1hr ago</i>
-                        <i>200 Comments</i>
-                        <i>200 Likes</i>
+                        <i><span> 200 Comments   </span><span class="bx bx-message-rounded-dots"></span></i>
+                        <i><span> 200 Likes   </span><span class="bx bx-like"></span></i>
                     </div>
                 </div>
             </div>
@@ -44,6 +44,7 @@ export const Feeds=()=>{
             <div className="features-product-image-container">
                 <div className="features-product-image-layer">
                     <div className="features-product-image">
+                        <i class="bx bx-heart"></i>
                         <div className="profile-pics">
                             <img src="image.png" alt="" />
                         </div>
@@ -52,7 +53,9 @@ export const Feeds=()=>{
                         <p><span>Name:</span>   jsdkdkd jkjdjks ks</p>
                         <p><span>Sector:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
                         <p><span>Platforms:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                    </div> 
+                    </div>
+                    <i className="bx bx-like"></i>
+                    <i class="bx bx-dislike"></i>
                 </div>
                 <div className="features-product-image-layer">
                     <div className="features-product-image">
