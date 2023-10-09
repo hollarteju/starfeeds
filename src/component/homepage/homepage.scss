@@ -20,8 +20,9 @@ img{
 .home-header-container{
     top: 90px;
     position: relative;
-    width: 100% ;
+    width: 100% !important;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 .home-page-header-container{
     width: 100% !important;
@@ -80,7 +81,7 @@ img{
     margin-top: 240px;
     margin-bottom: 2rem;
     margin-inline: $margin-container;
-    width: 60%;
+    width: 80%;
     span{
         padding-bottom: 10px;
         font-size: 24px;
@@ -139,7 +140,7 @@ img{
             display: block;
             position: relative;
             text-align: right;
-            width: 70%;
+            width: 80%;
             border-bottom: 1px solid $border;
             margin-bottom: 3rem;
             padding-bottom: 1rem;
@@ -170,7 +171,7 @@ img{
             gap: 1rem;
             margin-bottom: 5rem;
             border-bottom: solid 1px $border;
-            width: 100%;
+            width: 100% !important;
             .profile-pics{
                 width: 50px;
                 height: 50px;
@@ -290,6 +291,9 @@ img{
         }
     }
 }
+// .container-fluid-int{
+//     margin-right: $margin-container;
+// }
 table{
     border-spacing: 0 15px !important;
     border-collapse: separate;
@@ -360,19 +364,13 @@ tbody tr .delete-btn{
    
 }
 
-@media(max-width:1260px){
-    .features-product-image-container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 1rem;
-    }
-   
-}
-
 @media(max-width:768px){
 
     .feeds-container{
         display: block;
+    }
+    .comments-details{
+        width: 90% !important;
     }
     
 }
@@ -382,7 +380,7 @@ tbody tr .delete-btn{
     }
     .home-page-header-toggles{
         margin-left: 2rem;
-        width: 80%;
+        width: 100%;
         margin-top: 130px !important;
         span{
             font-size: 18px;
@@ -398,7 +396,8 @@ tbody tr .delete-btn{
         font-size: 12px;
     }
     .feeds-users-text-field-container{
-        width: 90% !important;
+        width: 80% !important;
+        
     }
     .home-page-header-container{
         height: 80px;
@@ -429,7 +428,7 @@ tbody tr .delete-btn{
     }
     .home-page-header-toggles{
         margin-left: 1rem;
-        width: 90%;
+        width: 100%;
     }
     .home-page-header-layer{
         margin-left: 4rem !important;
