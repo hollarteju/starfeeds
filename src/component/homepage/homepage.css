@@ -54,6 +54,10 @@ img {
   line-height: 33.38px;
 }
 
+.active-color {
+  color: rgba(102, 102, 102, 0.6980392157);
+}
+
 .home-page-header-toggles {
   font-size: 24px;
   font-weight: 600;
@@ -63,7 +67,7 @@ img {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
   position: relative;
-  color: rgba(102, 102, 102, 0.6980392157);
+  color: #4d0695;
   border-bottom: 1px solid #C4C4C4;
   margin-top: 240px;
   margin-bottom: 2rem;
@@ -78,6 +82,10 @@ img {
 .home-page-header-toggles span:hover {
   color: #4d0695;
   cursor: pointer;
+}
+
+.none {
+  display: none;
 }
 
 .border-bottom {
@@ -253,6 +261,65 @@ img {
   height: 71px;
   border: 1px #4d0695 solid;
   align-self: center;
+}
+
+table {
+  border-spacing: 0 15px !important;
+  border-collapse: separate;
+}
+
+table td,
+table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+thead tr th {
+  background-color: #4d0695 !important;
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: 600;
+}
+
+.table-scroll table thead th {
+  font-size: 1.25rem;
+}
+
+thead {
+  top: 0;
+  position: sticky;
+  background-color: #4d0695 !important;
+}
+
+tbody tr td {
+  border-block: 1px #D9D9D9 solid !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+tbody tr td .profile-pics {
+  width: 35px;
+  height: 35px;
+}
+
+tbody tr:hover td:nth-child(1) {
+  border-left: 4px #4d0695 solid !important;
+  border-top-left-radius: 1rem;
+}
+
+tbody tr td:nth-child(1) {
+  border-left: 1px #D9D9D9 solid !important;
+}
+
+tbody tr td:nth-child(5) {
+  border-right: 1px #D9D9D9 solid !important;
+}
+
+tbody tr .delete-btn {
+  border: 1px solid #CBD2E0;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding-block: 10px;
 }
 
 @media (max-width: 1260px) {

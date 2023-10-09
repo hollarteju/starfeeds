@@ -1,5 +1,7 @@
 import React from "react";
-import { Feeds } from "../sections/feeds";
+import  {Feeds}  from "../sections/feeds";
+import Pool from "../sections/pool";
+import Integration from "../sections/integrations";
 import { useState } from "react";
 
 
@@ -22,15 +24,17 @@ function HomePageHeader(){
             </div>
         </div>
         <div className="home-page-header-toggles">
-            <span onClick={()=>PageToggle("feeds")}  className={Toggle==="feeds"?"border-bottom":""} >Feed</span>
-            <span onClick={()=>PageToggle("int")}  className={Toggle==="int"?"border-bottom":""}>Integrations</span>
-            <span onClick={()=>PageToggle("pool")}  className={Toggle==="pool"?"border-bottom":""} >Pool</span>
+            <span onClick={()=>PageToggle("feeds")}  className={Toggle==="feeds"?"border-bottom":"active-color"} >Feed</span>
+            <span onClick={()=>PageToggle("int")}  className={Toggle==="int"?"border-bottom":"active-color"}>Integrations</span>
+            <span onClick={()=>PageToggle("pool")}  className={Toggle==="pool"?"border-bottom":"active-color"} >Pool</span>
         </div>
         <div className="home-page-layer">
-            <section className="stages-container" >
+            <section className={Toggle==="feeds"?"stages-container":"none"} >
                <Feeds/>
             </section>
-           
+           <section className={Toggle==="int"?"stages-container":"none"}>
+                <Integration/>
+           </section>
         </div>
     </div>
     )
