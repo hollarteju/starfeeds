@@ -131,18 +131,11 @@ form{
 
 @media(min-height:974px){
   .sign-container{
-     margin-top: 250px;
+     margin-top: 500px;
   }
  
 }
 
-
-@media(min-height:974px){
-  .sign-container{
-     margin-top: 250px;
-  }
- 
-}
 
 @media(max-width:425px){
   .navbar-container{
@@ -171,7 +164,7 @@ form{
 }
 
 @media(max-height:649px){
-  .sign-container{
-    margin-top: 450px !important;
+  #signin{
+    margin-top: 150px !important;
   }
 }

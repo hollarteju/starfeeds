@@ -112,12 +112,7 @@ form .register-link {
 
 @media (min-height: 974px) {
   .sign-container {
-    margin-top: 250px;
-  }
-}
-@media (min-height: 974px) {
-  .sign-container {
-    margin-top: 250px;
+    margin-top: 500px;
   }
 }
 @media (max-width: 425px) {
@@ -141,7 +136,7 @@ form .register-link {
   }
 }
 @media (max-height: 649px) {
-  .sign-container {
-    margin-top: 450px !important;
+  #signin {
+    margin-top: 150px !important;
   }
 }/*# sourceMappingURL=App.css.map */
