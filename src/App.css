@@ -110,6 +110,11 @@ form .register-link {
   padding: 0;
 }
 
+@media (max-width: 1260px) {
+  .navbar-container {
+    padding-left: 40px;
+  }
+}
 @media (min-height: 974px) {
   .sign-container {
     margin-top: 500px;

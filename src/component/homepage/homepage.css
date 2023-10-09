@@ -329,6 +329,15 @@ tbody tr .delete-btn {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 1rem;
   }
+  .home-page-header-toggles {
+    margin-left: 2rem;
+  }
+  .stages-container {
+    margin-left: 2rem;
+  }
+  .home-page-header-layer {
+    margin-left: 2rem !important;
+  }
 }
 @media (max-width: 768px) {
   .feeds-container {
@@ -339,11 +348,7 @@ tbody tr .delete-btn {
   }
 }
 @media (max-width: 425px) {
-  .stages-container {
-    margin-left: 2rem;
-  }
   .home-page-header-toggles {
-    margin-left: 2rem;
     width: 100%;
     margin-top: 130px !important;
   }

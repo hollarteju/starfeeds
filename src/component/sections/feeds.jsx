@@ -39,7 +39,7 @@ export const Feeds=()=>{
                 </div>
             </div>
         </div>
-        <div className="featured-products-container d-lg-block d-none">
+        <div className="featured-products-container d-md-block d-none">
             <p>Featured Products</p>
             <div className="features-product-image-container">
                 <div className="features-product-image-layer">

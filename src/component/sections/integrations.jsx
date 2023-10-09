@@ -2,7 +2,7 @@ import React from "react";
 
 function Integration(){
     return(
-    <div className="container-fluid p-0 overflow-hidden">
+    <div className="container-fluid px-1 overflow-hidden int-container">
       <div class="container-fluid-int p-0">
         <div class="row justify-content-center">
           <div >
