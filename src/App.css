@@ -141,7 +141,7 @@ form .register-link {
   }
 }
 @media (max-height: 649px) {
-  #signin {
-    margin-top: 150px !important;
+  .sign-container {
+    margin-top: 450px !important;
   }
 }/*# sourceMappingURL=App.css.map */
