@@ -255,7 +255,14 @@ img {
   align-self: center;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1260px) {
+  .features-product-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem;
+  }
+}
+@media (max-width: 1260px) {
   .features-product-image-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
@@ -327,5 +334,8 @@ img {
 @media (max-width: 320px) {
   #comment-icons {
     font-size: 10px;
+  }
+  .home-page-header-layer {
+    margin-left: 3.5rem !important;
   }
 }/*# sourceMappingURL=homepage.css.map */

@@ -33,18 +33,18 @@ export const Feeds=()=>{
                     </div>
                     <div id="comment-icons">
                         <i>Posted 1hr ago</i>
-                        <i><span> 200 Comments   </span><span class="bx bx-message-rounded-dots"></span></i>
-                        <i><span> 200 Likes   </span><span class="bx bx-like"></span></i>
+                        <i><span> 200 Comments   </span><span class="bx bxs-message-rounded-dots"></span></i>
+                        <i><span> 200 Likes   </span><span class="bx bxs-like"></span></i>
                     </div>
                 </div>
             </div>
         </div>
-        <div className="featured-products-container d-lg-block d-none">
+        <div className="featured-products-container d-md-block d-none">
             <p>Featured Products</p>
             <div className="features-product-image-container">
                 <div className="features-product-image-layer">
                     <div className="features-product-image">
-                        <i class="bx bx-heart"></i>
+                        <i class="bx bxs-heart"></i>
                         <div className="profile-pics">
                             <img src="image.png" alt="" />
                         </div>
@@ -54,8 +54,8 @@ export const Feeds=()=>{
                         <p><span>Sector:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
                         <p><span>Platforms:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
                     </div>
-                    <i className="bx bx-like"></i>
-                    <i class="bx bx-dislike"></i>
+                    <i class="bx bxs-like"></i>
+                    <i class="bx bxs-dislike"></i>
                 </div>
                 <div className="features-product-image-layer">
                     <div className="features-product-image">
