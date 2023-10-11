@@ -17,7 +17,7 @@ function Integration(){
                         <th >Category</th>
                         <th >Date Of Registration</th>
                         <th >Last Visited</th>
-                        <th >Action</th>
+                        <th class="px-3">Action</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -32,7 +32,7 @@ function Integration(){
                         <td>Finance</td>
                         <td>22/01/2023</td>
                         <td>1/07/203</td>
-                        <div class="delete-btn align-items-center">
+                        <div class="delete-btn">
                           <span>Delete</span>
                           <i class="material-symbols-outlined">delete</i>
                         </div>
@@ -175,7 +175,7 @@ function Integration(){
                         <td>Maps.Inc </td>
                         <td>Finance</td>
                         <td>22/01/2023</td>
-                        <td>1/07/203</td>
+                        <td >1/07/203</td>
                         <div class="delete-btn align-items-center">
                           <span>Delete</span>
                           <i class="material-symbols-outlined">delete</i>

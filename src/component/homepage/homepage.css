@@ -73,7 +73,7 @@ img {
   margin-top: 240px;
   margin-bottom: 2rem;
   margin-inline: 100px;
-  width: 80%;
+  width: 85%;
 }
 .home-page-header-toggles span {
   padding-bottom: 10px;
@@ -81,7 +81,7 @@ img {
   font-weight: 600;
 }
 .home-page-header-toggles span:hover {
-  color: #4d0695;
+  opacity: 0.5;
   cursor: pointer;
 }
 
@@ -90,7 +90,7 @@ img {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #4d0695 !important;
+  border-bottom: 2px solid #4d0695 !important;
 }
 
 .stages-container {
@@ -374,6 +374,14 @@ tbody tr td:nth-child(5) {
   border-right: 1px #D9D9D9 solid !important;
 }
 
+tbody tr td:nth-child(7) {
+  border-right: 1px solid #D9D9D9 !important;
+}
+
+#td {
+  border-inline: none !important;
+}
+
 tbody tr .delete-btn {
   border: 1px solid #CBD2E0;
   border-radius: 10px;
@@ -390,9 +398,10 @@ tbody tr .delete-btn i {
   color: #4d0695;
 }
 
-.delete-btn:hover i {
-  transform: scale(0.9);
-  opacity: 0.5;
+.delete-btn:hover {
+  transform: scale(0.5) !important;
+  opacity: 0.5 !important;
+  cursor: pointer !important;
 }
 
 @media (max-width: 1260px) {

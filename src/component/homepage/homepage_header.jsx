@@ -35,6 +35,9 @@ function HomePageHeader(){
            <section className={Toggle==="int"?"stages-container":"none"}>
                 <Integration/>
            </section>
+           <section className={Toggle==="pool"?"stages-container":"none"}>
+                <Pool/>
+           </section>
         </div>
     </div>
     )

@@ -81,14 +81,14 @@ img{
     margin-top: 240px;
     margin-bottom: 2rem;
     margin-inline: $margin-container;
-    width: 80%;
+    width: 85%;
     span{
         padding-bottom: 10px;
         font-size: 24px;
         font-weight: 600;
     }
     span:hover{
-        color: $purple-color;
+        opacity: 0.5;
         cursor: pointer;
     }
     }
@@ -97,7 +97,7 @@ img{
         display: none;
     }
     .border-bottom{
-        border-bottom : 1px solid $purple-color !important;
+        border-bottom : 2px solid $purple-color !important;
     }
 
 .stages-container{
@@ -412,6 +412,13 @@ tbody tr td:nth-child(1){
 tbody tr td:nth-child(5){
     border-right: 1px $integration-border solid !important;
 }
+
+tbody tr td:nth-child(7){
+    border-right:1px solid $integration-border !important;
+}
+#td{
+    border-inline:none!important;
+}
 tbody tr .delete-btn{
    border: 1px solid $placeholder-color;
    border-radius: 10px;
@@ -428,9 +435,10 @@ tbody tr .delete-btn{
    }
     
 }
-.delete-btn:hover i{
-    transform: scale(0.9);
-    opacity: 0.5;
+.delete-btn:hover{
+    transform: scale(0.5) !important;
+    opacity: 0.5 !important;
+    cursor: pointer !important;
    }
 @media(max-width:1260px){
    
