@@ -5,13 +5,14 @@ export const Feeds=()=>{
     <div className="feeds-container">
         <div className="users-feeds-container">
             <div id="search-input">
-                <i class="bc bx-search bx-rotate-90"></i>
+                <i class="material-symbols-outlined">search</i>
+                      
                 <input type="text" placeholder="Search Record"/>
             </div>
             <div className="feeds-users-text-field-container">
                 <div id="users-text-field">
                     <div className="profile-pics">
-                        <img src="StarFeeds.png" alt="" />
+                        <img src="Ellipse.png" alt="" />
                     </div>
                     <input type="text" placeholder="What would you be sharing today" />
                 </div>
@@ -19,22 +20,61 @@ export const Feeds=()=>{
             </div>
             <div className="comments-container">
                 <div className="profile-pics">
-                    <img src="StarFeeds.png" alt="" />
+                    <img src="Ellipse.png" alt="" />
+                </div>
+                <div className="comments-details">
+                    <p>Maps123456</p>
+                    <span>
+                        Birdie is a cutting-edge social media app that aims to bring people
+                         together in a vibrant and engaging online community. Inspired by the
+                          spirit of social birds, Birdie allows users to connect
+                    </span>
+                    
+                    <div id="comment-icons">
+                        <span><i>Posted </i>1hr ago</span>
+                        <i><span> 200 </span><span>Comments</span><span class="material-symbols-outlined">sms</span></i>
+                        <i><span> 200 </span><span>Likes</span><span class="material-symbols-outlined">thumb_up</span></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div className="comments-container">
+                <div className="profile-pics">
+                    <img src="Ellipse.png" alt="" />
                 </div>
                 <div className="comments-details">
                     <p>Admin</p>
-                    <span>Bird is a cutting edge jksds dslndskds skjbds \
-                        skskjbdsksdkjdsbds dskbdshds sjhdshjsd shjs sjbsd dsjhs
-                        hsahj s sjhdsjdsjsd sdkbds sdds dssaskasbsa sak
-                        sahjasjas askbsa sakbas saksa saas sa as 
+                    <span>
+                        Birdie is a cutting-edge social media app that aims to bring people
+                         together in a vibrant and engaging online community. Inspired by the
+                          spirit of social birds, Birdie allows users to connect
+                    </span>
+                   
+                    <div id="comment-icons">
+                        <span><i>Posted </i>1hr ago</span>
+                        <i><span> 200 </span><span>Comments</span><span class="material-symbols-outlined">sms</span></i>
+                        <i><span> 200 </span><span>Likes</span><span class="material-symbols-outlined">thumb_up</span></i>
+                    </div>
+                </div>
+            </div>
+            <div className="comments-container">
+                <div className="profile-pics">
+                    <img src="Ellipse.png" alt="" />
+                </div>
+                <div className="comments-details">
+                    <p>Admin</p>
+                    <span>
+                        Birdie is a cutting-edge social media app that aims to bring people
+                         together in a vibrant and engaging online community. Inspired by the
+                          spirit of social birds, Birdie allows users to connect
                     </span>
                     <div className="comments-media">
-                        <img src="StarFeeds.png" alt="" />
+                        <img src="Frame_comment.png" alt="" />
                     </div>
                     <div id="comment-icons">
-                        <i>Posted 1hr ago</i>
-                        <i><span> 200 Comments   </span><span class="bx bxs-message-rounded-dots"></span></i>
-                        <i><span> 200 Likes   </span><span class="bx bxs-like"></span></i>
+                        <span><i>Posted </i>1hr ago</span>
+                        <i><span> 200 </span><span>Comments</span><span class="material-symbols-outlined">sms</span></i>
+                        <i><span> 200 </span><span>Likes</span><span class="material-symbols-outlined">thumb_up</span></i>
                     </div>
                 </div>
             </div>
@@ -44,118 +84,162 @@ export const Feeds=()=>{
             <div className="features-product-image-container">
                 <div className="features-product-image-layer">
                     <div className="features-product-image">
-                        <i class="bx bxs-heart"></i>
+                          <span class="material-symbols-outlined">favorite</span>
                         <div className="profile-pics">
                             <img src="image.png" alt="" />
                         </div>
                     </div>
                     <div className="product-details">
-                        <p><span>Name:</span>   jsdkdkd jkjdjks ks</p>
-                        <p><span>Sector:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                        <p><span>Platforms:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
+                        <p><span>Name:</span> Lorem Ipsum</p>
+                        <p><span>Sector:</span> Lorem Ipsum</p>
+                        <p><span>Platforms:</span> Google/IOS</p>
                     </div>
-                    <i class="bx bxs-like"></i>
-                    <i class="bx bxs-dislike"></i>
+                    <div className="featured-thumbs">
+                            <span class="material-symbols-outlined">thumb_up</span>
+                        <span class="material-symbols-outlined">thumb_down</span>
+                    </div>
                 </div>
                 <div className="features-product-image-layer">
                     <div className="features-product-image">
+                          <span class="material-symbols-outlined">favorite</span>
                         <div className="profile-pics">
                             <img src="image.png" alt="" />
                         </div>
                     </div>
                     <div className="product-details">
-                        <p><span>Name:</span>   jsdkdkd jkjdjks ks</p>
-                        <p><span>Sector:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                        <p><span>Platforms:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                    </div> 
+                        <p><span>Name:</span> Lorem Ipsum</p>
+                        <p><span>Sector:</span> Lorem Ipsum</p>
+                        <p><span>Platforms:</span> Google/IOS</p>
+                    </div>
+                    <div className="featured-thumbs">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                        <span class="material-symbols-outlined">thumb_down</span>
+                    </div>
                 </div>
                 <div className="features-product-image-layer">
                     <div className="features-product-image">
+                          <span class="material-symbols-outlined">favorite</span>
                         <div className="profile-pics">
                             <img src="image.png" alt="" />
                         </div>
                     </div>
                     <div className="product-details">
-                        <p><span>Name:</span>   jsdkdkd jkjdjks ks</p>
-                        <p><span>Sector:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                        <p><span>Platforms:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                    </div> 
+                        <p><span>Name:</span> Lorem Ipsum</p>
+                        <p><span>Sector:</span> Lorem Ipsum</p>
+                        <p><span>Platforms:</span> Google/IOS</p>
+                    </div>
+                    <div className="featured-thumbs">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                        <span class="material-symbols-outlined">thumb_down</span>
+                    </div>
                 </div>
                 <div className="features-product-image-layer">
                     <div className="features-product-image">
+                          <span class="material-symbols-outlined">favorite</span>
                         <div className="profile-pics">
                             <img src="image.png" alt="" />
                         </div>
                     </div>
                     <div className="product-details">
-                        <p><span>Name:</span>   jsdkdkd jkjdjks ks</p>
-                        <p><span>Sector:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                        <p><span>Platforms:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                    </div> 
+                        <p><span>Name:</span> Lorem Ipsum</p>
+                        <p><span>Sector:</span> Lorem Ipsum</p>
+                        <p><span>Platforms:</span> Google/IOS</p>
+                    </div>
+                    <div className="featured-thumbs">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                        <span class="material-symbols-outlined">thumb_down</span>
+                    </div>
                 </div>
                 <div className="features-product-image-layer">
                     <div className="features-product-image">
+                          <span class="material-symbols-outlined">favorite</span>
                         <div className="profile-pics">
                             <img src="image.png" alt="" />
                         </div>
                     </div>
                     <div className="product-details">
-                        <p><span>Name:</span>   jsdkdkd jkjdjks ks</p>
-                        <p><span>Sector:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                        <p><span>Platforms:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                    </div> 
+                        <p><span>Name:</span> Lorem Ipsum</p>
+                        <p><span>Sector:</span> Lorem Ipsum</p>
+                        <p><span>Platforms:</span> Google/IOS</p>
+                    </div>
+                    <div className="featured-thumbs">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                        <span class="material-symbols-outlined">thumb_down</span>
+                    </div>
                 </div>
                 <div className="features-product-image-layer">
                     <div className="features-product-image">
+                          <span class="material-symbols-outlined">favorite</span>
                         <div className="profile-pics">
                             <img src="image.png" alt="" />
                         </div>
                     </div>
                     <div className="product-details">
-                        <p><span>Name:</span>   jsdkdkd jkjdjks ks</p>
-                        <p><span>Sector:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                        <p><span>Platforms:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                    </div> 
+                        <p><span>Name:</span> Lorem Ipsum</p>
+                        <p><span>Sector:</span> Lorem Ipsum</p>
+                        <p><span>Platforms:</span> Google/IOS</p>
+                    </div>
+                    <div className="featured-thumbs">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                        <span class="material-symbols-outlined">thumb_down</span>
+                    </div>
                 </div>
+                
             </div>
             <p class="mt-5 pt-5">Trending By Vote</p>
             <div className="features-product-image-container"> 
-                <div className="features-product-image-layer">
-                    <div className="features-product-image">
+            <div className="features-product-image-layer">
+                <div className="features-product-image">
+                          <span class="material-symbols-outlined">favorite</span>
                         <div className="profile-pics">
                             <img src="image.png" alt="" />
                         </div>
                     </div>
                     <div className="product-details">
-                        <p><span>Name:</span>   jsdkdkd jkjdjks ks</p>
-                        <p><span>Sector:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                        <p><span>Platforms:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                    </div> 
+                        <p><span>Name:</span> Lorem Ipsum</p>
+                        <p><span>Sector:</span> Lorem Ipsum</p>
+                        <p><span>Platforms:</span> Google/IOS</p>
+                    </div>
+                    <div className="featured-thumbs">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                        <span class="material-symbols-outlined">thumb_down</span>
+                    </div>
                 </div>
                 <div className="features-product-image-layer">
                     <div className="features-product-image">
+                          <span class="material-symbols-outlined">favorite</span>
                         <div className="profile-pics">
                             <img src="image.png" alt="" />
                         </div>
                     </div>
                     <div className="product-details">
-                        <p><span>Name:</span>   jsdkdkd jkjdjks ks</p>
-                        <p><span>Sector:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                        <p><span>Platforms:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                    </div> 
+                        <p><span>Name:</span> Lorem Ipsum</p>
+                        <p><span>Sector:</span> Lorem Ipsum</p>
+                        <p><span>Platforms:</span> Google/IOS</p>
+                    </div>
+                    <div className="featured-thumbs">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                        <span class="material-symbols-outlined">thumb_down</span>
+                    </div>
                 </div>
                 <div className="features-product-image-layer">
                     <div className="features-product-image">
+                          <span class="material-symbols-outlined">favorite</span>
                         <div className="profile-pics">
                             <img src="image.png" alt="" />
                         </div>
                     </div>
                     <div className="product-details">
-                        <p><span>Name:</span>   jsdkdkd jkjdjks ks</p>
-                        <p><span>Sector:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                        <p><span>Platforms:</span>   jsdkdkd jkjdjkskxb jbsjhd hsdhs kjskd skjbds sk</p>
-                    </div> 
+                        <p><span>Name:</span> Lorem Ipsum</p>
+                        <p><span>Sector:</span> Lorem Ipsum</p>
+                        <p><span>Platforms:</span> Google/IOS</p>
+                    </div>
+                    <div className="featured-thumbs">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                        <span class="material-symbols-outlined">thumb_down</span>
+                    </div>
                 </div>
+                
             </div>
             
         </div>

@@ -6,16 +6,16 @@ import { Link } from "react-router-dom";
 const SignInPage =()=>{
 
     return(
-      
+        <div class="container">            
             <div class="vh-100 sign-in" className="sign-container" id="signin">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col col-xl-10">
                         <div class="card">
                              <div class="row g-0">
-                                <div class="col-md-6 col-lg-5 d-none d-md-block sign-in-image">
+                                <div class="col-md-6 col-lg-6 d-none d-md-block sign-in-image">
                                     <img src="log_in_pic.png" />
                                 </div> 
-                                    <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                                    <div class="col-md-6 col-lg-6 d-flex align-items-center">
                                         <div class="card-body p-4 p-lg-5 mx-4 text-black">
 
                                             <form>
@@ -57,6 +57,7 @@ const SignInPage =()=>{
                         </div>
                     </div>
                 </div>
+            </div>
            
          
            

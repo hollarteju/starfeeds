@@ -119,9 +119,9 @@ img{
         #search-input{
             display: flex;
             
-            width: 50%;
+            width: 55%;
             height: 42px;
-            box-shadow: 2px 2px 3px -1px $box-shadow;
+            box-shadow: 1px 1px 5px -1px $box-shadow;
             position: relative;
             border-radius: 5px;
             text-align: center;
@@ -132,6 +132,7 @@ img{
                 width: 100%;
                 padding-left: 18px;
             }
+           
             i{
                 font-size: 20px;
             }
@@ -155,6 +156,11 @@ img{
                 }
                 input{
                     width: 90%;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+                input::placeholder{
+                    font-size: 20px;
                 }
             }
             button{
@@ -162,7 +168,13 @@ img{
                 border-radius: 20px;
                 position: relative;
                 margin-top: 3rem;
-                
+                font-size: 16px;
+                font-weight: 400;
+              
+            }
+            button:hover{
+                color: white;
+                background-color: $purple-color;
             }
         }
         .comments-container{
@@ -192,10 +204,9 @@ img{
                 .comments-media{
                     width: 80%;
                     height: 183px;
-                    border: 1px solid;
                     border-radius: 10px;
                     margin-top: 2rem;
-                    margin-bottom: 1rem;
+                  
                     overflow: hidden;
 
                 }
@@ -204,10 +215,21 @@ img{
                     gap: 61px;
                     color: #666666;
                     width: 100%;
+                    margin-top: 1rem;
+                    font-size: 16px;
+                    font-weight: 400;
+                    position: relative;
+                   
+                    white-space: nowrap;
+                   
                    
                     i{
                         cursor: pointer;
-                       
+                        align-content: center !important;
+                        justify-content: center;
+                        span{
+                            padding-inline: 2px;
+                        }
                     }
                     i:hover{
                         color: $purple-color;
@@ -236,12 +258,33 @@ img{
             grid-template-columns: repeat(3, 1fr);
             gap: 1rem;
             
-           
+            .features-product-image-layer:hover{
+                transform: scale(0.9);
+                transition: ease 1ms;
+            }
             .features-product-image-layer{
                 height: fit-content;
                 text-overflow: ellipsis;
                 align-items: center;
                 width: 100%;
+                margin-bottom: 2rem;
+                cursor: pointer;
+                
+                .featured-thumbs{
+                    font-size: 20px;
+                    color: #666666;
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 0.6rem;
+                    cursor: pointer;
+                    font-weight: lighter;
+                    span:hover{
+                        color: $purple-color;
+                        transform: scale(0.9); 
+                    }
+                }
+                
                
                 
                 p{
@@ -254,30 +297,31 @@ img{
                 .product-details{
                     margin-top: 1rem;
                     padding-bottom: 0.5rem;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 16px;
                     p{
                         color: black;
-                        text-overflow: ellipsis;
+                        // text-overflow: ellipsis;
                         position: relative;
-                        overflow: hidden;
+                        // overflow: hidden;
                         white-space: nowrap;
                         line-height: 25px;
                         margin: 0;
-
-                        
-                        span{
-                            font-weight: 600;
-                        } 
                     }
                 }
+               
+                
     
             }
+            
         }
+        
         .features-product-image{
             width: 100%;
             height: 128px;
-            box-shadow: 2px 2px 3px  $box-shadow;
+            box-shadow: 1px 1px 5px -1px $box-shadow;
             border-radius: 20px;
-            border: 0.5px solid #474747;
             // align-items: center;
             justify-content: center;
             position: relative;
@@ -288,6 +332,13 @@ img{
                 border: 1px #4d0695 solid;
                 align-self: center;
             }
+            span{
+                position: absolute;
+                right: 25px;
+                top: 10px;
+                font-size: 16px;
+                color: red;
+            }
         }
     }
 }
@@ -295,6 +346,9 @@ img{
 // .container-fluid-int{
 //     margin-right: $margin-container;
 // }
+.int-container{
+    margin-right: $margin-container;
+}
 table{
     border-spacing: 0 15px !important;
     border-collapse: separate;
@@ -308,11 +362,16 @@ table th {
 }
 
 
+
 thead tr th {
   background-color: $purple-color !important;
   color: $white-color !important;
   font-size: 16px !important;
   font-weight: 600;
+  
+}
+thead tr th:nth-child(6){
+    width: 5% !important;
 }
 
 .table-scroll table thead th {
@@ -331,6 +390,10 @@ tbody tr td{
     border-block: 1px $integration-border solid !important;
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.9rem;
+    span{
+        align-self: center;
+    }
     .profile-pics{
         width: 35px;
         height: 35px;
@@ -353,9 +416,22 @@ tbody tr .delete-btn{
    border: 1px solid $placeholder-color;
    border-radius: 10px;
    margin-left: 10px;
-   padding-block: 10px;
+   align-items: start !important;
+   position: relative;
+   width: fit-content;
+   cursor: pointer;
+   display: flex;
+   z-index: -100;
+  
+   i{
+    color: $purple-color;
+   }
     
 }
+.delete-btn:hover i{
+    transform: scale(0.9);
+    opacity: 0.5;
+   }
 @media(max-width:1260px){
    
     .features-product-image-container{
@@ -367,11 +443,20 @@ tbody tr .delete-btn{
         margin-left:2rem;
     }
 
+    .int-container{
+        margin-right: 2rem;
+    }
+
     .stages-container{
         margin-left: 2rem;
     }
     .home-page-header-layer{
         margin-left: 2rem !important;
+    }
+
+    #comment-icons{
+        font-size: 11px;
+        color: red;
     }
    
 }
@@ -405,6 +490,18 @@ tbody tr .delete-btn{
     #comment-icons{
         gap: 21px !important;
         font-size: 12px;
+        span{
+            i:nth-child(1){
+                display: none;
+            }
+          
+        }
+        i{
+            span:nth-child(2){
+                display: none !important;
+            }
+        }
+       
     }
     .feeds-users-text-field-container{
         width: 80% !important;

@@ -17,9 +17,9 @@ function HomePageHeader(){
             <img id="frame-img" src="Frame.png" alt="" />
             <div className="home-page-header-layer">
                 <div className="profile-pics">
-                    <img src="StarFeeds.png" alt="" />
+                    <img src="Ellipse.png" alt="" />
                 </div>
-                <p>Map Styles</p>
+                <p>Maps Styles</p>
               
             </div>
         </div>

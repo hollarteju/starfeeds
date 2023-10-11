@@ -2,7 +2,7 @@ import React from "react";
 
 function Integration(){
     return(
-    <div className="container-fluid px-1 overflow-hidden int-container">
+    <div className="overflow-hidden int-container">
       <div class="container-fluid-int p-0">
         <div class="row justify-content-center">
           <div >
@@ -24,43 +24,179 @@ function Integration(){
                       <tr>
                         <td class="d-flex gap-2 align-items-center px-3">
                             <div className="profile-pics">
-                                <img src="StarFeeds.png" alt="" />
+                                <img src="Ellipse_int.png" alt="" />
                             </div>
-                            <span> Like a butterfly</span>
+                            <span> Webmail</span>
                         </td>
-                        <td><span>Boxing</span> </td>
-                        <td>9:00 AM - 11:00 AM</td>
-                        <td>Aaron Chapman</td>
-                        <td>10</td>
-                        <div class="delete-btn">Delete <i class="bx bxs-delete"></i></div>
+                        <td>Maps.Inc </td>
+                        <td>Finance</td>
+                        <td>22/01/2023</td>
+                        <td>1/07/203</td>
+                        <div class="delete-btn align-items-center">
+                          <span>Delete</span>
+                          <i class="material-symbols-outlined">delete</i>
+                        </div>
                       </tr>
                       <tr>
                         <td class="d-flex gap-2 align-items-center px-3">
                             <div className="profile-pics">
-                                <img src="StarFeeds.png" alt="" />
+                                <img src="Ellipse_int.png" alt="" />
                             </div>
-                            <span> Like a butterfly</span>
+                            <span> Webmail</span>
                         </td>
-                        <td> Boxing</td>
-                        <td>9:00 AM - 11:00 AM</td>
-                        <td>Aaron Chapman</td>
-                        <td>10</td>
-                        <div class="delete-btn">Delete <i class="bx bxs-delete"></i></div>
+                        <td>Maps.Inc </td>
+                        <td>Finance</td>
+                        <td>22/01/2023</td>
+                        <td>1/07/203</td>
+                        <div class="delete-btn align-items-center">
+                          <span>Delete</span>
+                          <i class="material-symbols-outlined">delete</i>
+                        </div>
                       </tr>
                       <tr>
                         <td class="d-flex gap-2 align-items-center px-3">
                             <div className="profile-pics">
-                                <img src="StarFeeds.png" alt="" />
+                                <img src="Ellipse_int.png" alt="" />
                             </div>
-                            <span> Like a butterfly</span>
+                            <span> Webmail</span>
                         </td>
-                        <td> Boxing</td>
-                        <td>9:00 AM - 11:00 AM</td>
-                        <td>Aaron Chapman</td>
-                        <td>10</td>
-                        <div class="delete-btn">Delete <i class="bx bxs-delete"></i></div>
+                        <td>Maps.Inc </td>
+                        <td>Finance</td>
+                        <td>22/01/2023</td>
+                        <td>1/07/203</td>
+                        <div class="delete-btn align-items-center">
+                          <span>Delete</span>
+                          <i class="material-symbols-outlined">delete</i>
+                        </div>
                       </tr>
-                      
+                      <tr>
+                        <td class="d-flex gap-2 align-items-center px-3">
+                            <div className="profile-pics">
+                                <img src="Ellipse_int.png" alt="" />
+                            </div>
+                            <span> Webmail</span>
+                        </td>
+                        <td>Maps.Inc </td>
+                        <td>Finance</td>
+                        <td>22/01/2023</td>
+                        <td>1/07/203</td>
+                        <div class="delete-btn align-items-center">
+                          <span>Delete</span>
+                          <i class="material-symbols-outlined">delete</i>
+                        </div>
+                      </tr>
+                      <tr>
+                        <td class="d-flex gap-2 align-items-center px-3">
+                            <div className="profile-pics">
+                                <img src="Ellipse_int.png" alt="" />
+                            </div>
+                            <span> Webmail</span>
+                        </td>
+                        <td>Maps.Inc </td>
+                        <td>Finance</td>
+                        <td>22/01/2023</td>
+                        <td>1/07/203</td>
+                        <div class="delete-btn align-items-center">
+                          <span>Delete</span>
+                          <i class="material-symbols-outlined">delete</i>
+                        </div>
+                      </tr>
+                      <tr>
+                        <td class="d-flex gap-2 align-items-center px-3">
+                            <div className="profile-pics">
+                                <img src="Ellipse_int.png" alt="" />
+                            </div>
+                            <span> Webmail</span>
+                        </td>
+                        <td>Maps.Inc </td>
+                        <td>Finance</td>
+                        <td>22/01/2023</td>
+                        <td>1/07/203</td>
+                        <div class="delete-btn align-items-center">
+                          <span>Delete</span>
+                          <i class="material-symbols-outlined">delete</i>
+                        </div>
+                      </tr>
+                      <tr>
+                        <td class="d-flex gap-2 align-items-center px-3">
+                            <div className="profile-pics">
+                                <img src="Ellipse_int.png" alt="" />
+                            </div>
+                            <span> Webmail</span>
+                        </td>
+                        <td>Maps.Inc </td>
+                        <td>Finance</td>
+                        <td>22/01/2023</td>
+                        <td>1/07/203</td>
+                        <div class="delete-btn align-items-center">
+                          <span>Delete</span>
+                          <i class="material-symbols-outlined">delete</i>
+                        </div>
+                      </tr>
+                      <tr>
+                        <td class="d-flex gap-2 align-items-center px-3">
+                            <div className="profile-pics">
+                                <img src="Ellipse_int.png" alt="" />
+                            </div>
+                            <span> Webmail</span>
+                        </td>
+                        <td>Maps.Inc </td>
+                        <td>Finance</td>
+                        <td>22/01/2023</td>
+                        <td>1/07/203</td>
+                        <div class="delete-btn align-items-center">
+                          <span>Delete</span>
+                          <i class="material-symbols-outlined">delete</i>
+                        </div>
+                      </tr>
+                      <tr>
+                        <td class="d-flex gap-2 align-items-center px-3">
+                            <div className="profile-pics">
+                                <img src="Ellipse_int.png" alt="" />
+                            </div>
+                            <span> Webmail</span>
+                        </td>
+                        <td>Maps.Inc </td>
+                        <td>Finance</td>
+                        <td>22/01/2023</td>
+                        <td>1/07/203</td>
+                        <div class="delete-btn align-items-center">
+                          <span>Delete</span>
+                          <i class="material-symbols-outlined">delete</i>
+                        </div>
+                      </tr>
+                      <tr>
+                        <td class="d-flex gap-2 align-items-center px-3">
+                            <div className="profile-pics">
+                                <img src="Ellipse_int.png" alt="" />
+                            </div>
+                            <span> Webmail</span>
+                        </td>
+                        <td>Maps.Inc </td>
+                        <td>Finance</td>
+                        <td>22/01/2023</td>
+                        <td>1/07/203</td>
+                        <div class="delete-btn align-items-center">
+                          <span>Delete</span>
+                          <i class="material-symbols-outlined">delete</i>
+                        </div>
+                      </tr>
+                      <tr>
+                        <td class="d-flex gap-2 align-items-center px-3">
+                            <div className="profile-pics">
+                                <img src="Ellipse_int.png" alt="" />
+                            </div>
+                            <span> Webmail</span>
+                        </td>
+                        <td>Maps.Inc </td>
+                        <td>Finance</td>
+                        <td>22/01/2023</td>
+                        <td>1/07/203</td>
+                        <div class="delete-btn align-items-center">
+                          <span>Delete</span>
+                          <i class="material-symbols-outlined">delete</i>
+                        </div>
+                      </tr>       
                     </tbody>
                   </table>
                 </div>
