@@ -470,6 +470,12 @@ tbody tr .delete-btn{
     .comments-details{
         width: 90% !important;
     }
+    .comments-container{
+        padding-right: 2rem !important;
+    }
+    .featured-products-container{
+        display: none !important;
+    }
     
 }
 @media(max-width:425px){
