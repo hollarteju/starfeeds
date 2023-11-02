@@ -31,9 +31,9 @@ export const Feeds=()=>{
                     </span>
                     
                     <div id="comment-icons">
-                        <span><i>Posted </i>1hr ago</span>
-                        <i><span> 200 </span><span>Comments</span><span class="material-symbols-outlined">sms</span></i>
-                        <i><span> 200 </span><span>Likes</span><span class="material-symbols-outlined">thumb_up</span></i>
+                        <i><span>Posted </span>1hr ago</i>
+                        <i><span> 200 </span><span class="d-none d-lg-flex">Comments</span><span class="material-symbols-outlined">sms</span></i>
+                        <i><span> 200 </span><span class="d-none d-lg-flex">Likes</span><span class="material-symbols-outlined">thumb_up</span></i>
                     </div>
                 </div>
             </div>
@@ -51,9 +51,9 @@ export const Feeds=()=>{
                     </span>
                    
                     <div id="comment-icons">
-                        <span><i>Posted </i>1hr ago</span>
-                        <i><span> 200 </span><span>Comments</span><span class="material-symbols-outlined">sms</span></i>
-                        <i><span> 200 </span><span>Likes</span><span class="material-symbols-outlined">thumb_up</span></i>
+                        <i><span>Posted </span>1hr ago</i>
+                        <i><span> 200 </span><span class="d-none d-lg-flex">Comments</span><span class="material-symbols-outlined">sms</span></i>
+                        <i><span> 200 </span><span class="d-none d-lg-flex">Likes</span><span class="material-symbols-outlined">thumb_up</span></i>
                     </div>
                 </div>
             </div>
@@ -72,9 +72,9 @@ export const Feeds=()=>{
                         <img src="Frame_comment.png" alt="" />
                     </div>
                     <div id="comment-icons">
-                        <span><i>Posted </i>1hr ago</span>
-                        <i><span> 200 </span><span>Comments</span><span class="material-symbols-outlined">sms</span></i>
-                        <i><span> 200 </span><span>Likes</span><span class="material-symbols-outlined">thumb_up</span></i>
+                        <i><span>Posted </span>1hr ago</i>
+                        <i><span> 200 </span><span class="d-none d-lg-flex">Comments</span><span class="material-symbols-outlined">sms</span></i>
+                        <i><span> 200 </span><span class="d-none d-lg-flex">Likes</span><span class="material-symbols-outlined">thumb_up</span></i>
                     </div>
                 </div>
             </div>

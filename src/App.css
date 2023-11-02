@@ -22,10 +22,8 @@ img {
   border-block: solid 0.5rem #4d0695;
   padding-left: 110px;
   padding-block: 5px;
-  position: fixed !important;
+  position: relative !important;
   width: 100%;
-  top: 0;
-  right: 0;
   background-color: white;
   z-index: 1000 !important;
 }

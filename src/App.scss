@@ -29,10 +29,8 @@ $container-background: white;
   border-block: solid 0.5rem $purple-color;
   padding-left: 110px;
   padding-block: 5px;
-  position: fixed !important;
+  position: relative!important;
   width: 100%;
-  top: 0;
-  right: 0;
   background-color: $white-color;
   z-index: 1000 !important;
 

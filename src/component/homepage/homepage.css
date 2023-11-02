@@ -9,7 +9,6 @@ img {
 }
 
 .home-header-container {
-  top: 90px;
   position: relative;
   width: 100% !important;
   box-sizing: border-box;
@@ -21,7 +20,6 @@ img {
   height: 170px;
   position: relative;
   text-align: center;
-  padding-top: 5px;
   display: block !important;
   align-items: center;
   align-content: center;
@@ -214,9 +212,11 @@ img {
   cursor: pointer;
   align-content: center !important;
   justify-content: center;
+  display: flex;
 }
 .feeds-container .users-feeds-container .comments-container .comments-details #comment-icons i span {
   padding-inline: 2px;
+  display: flex;
 }
 .feeds-container .users-feeds-container .comments-container .comments-details #comment-icons i:hover {
   color: #4d0695;

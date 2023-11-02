@@ -18,7 +18,6 @@ img{
     height: 100%;
 }
 .home-header-container{
-    top: 90px;
     position: relative;
     width: 100% !important;
     box-sizing: border-box;
@@ -29,7 +28,6 @@ img{
     height: 170px;
     position: relative;
     text-align: center;
-    padding-top: 5px;
     display: block !important;
     align-items: center;
     align-content: center;
@@ -227,8 +225,10 @@ img{
                         cursor: pointer;
                         align-content: center !important;
                         justify-content: center;
+                        display: flex;
                         span{
                             padding-inline: 2px;
+                            display: flex;
                         }
                     }
                     i:hover{
