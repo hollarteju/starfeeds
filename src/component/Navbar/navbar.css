@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;500;700;600&display=swap");
+
+
+*{
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --gray: #848484;
+  --purple:#4D0695;
+  --dark-gray:#2E2F35 ;
+}
+.nav{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  align-items: center;
+  text-align: center;
+  height: 98px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+  z-index: 1000;
+  align-items: center !important;
+  align-content: center !important;
+  
+
+}
+
+.logo{
+  width: 169px;
+  height: 98px;
+  background: url("../../../public/images/vector.png")
+
+}
+
+.link{
+  display: flex;
+  justify-content: space-between !important;
+  width: 790px;
+  align-items: center !important;
+  align-content: center !important ;
+  position: relative;
+  text-align: center;
+  padding: 0;
+}
+
+.link ul{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 621px;
+  position: relative;
+  align-self: end;
+  padding: 0;
+ 
+}
+
+.link ul li{
+    padding: 24px;
+    color: var(--gray) !important;
+    
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    justify-content: center;
+    /* background-color: red; */
+  
+}
+
+.link ul li a{
+  color: var(--gray);
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Manrope";
+}
+
+
+.button button:first-child{
+  border-radius: 12px;
+  border: 2px solid var(--purple);
+  background: #FFF;
+  box-shadow: 3px 3px var(--purple);
+  padding:8px 40px;
+  margin-inline: 12px;
+  cursor: pointer;
+  color: var(--purple);
+}
+
+.button button:last-child{
+  border-radius: 12px;
+  border: 2px solid var(--dark-gray);
+  background: var(--purple);
+  box-shadow: 3px 3px 0px 0px var(--dark-gray);
+  padding:8px 25px;
+  color: white;
+  cursor: pointer;
+}
+
+#menuBar{
+    display: none;
+}
+
+@media(max-width:1114px){
+  .link{
+    width: 750px;
+  }
+}
+
+
+@media(max-width:884px){
+
+  .link{
+    width: 150px;
+  }
+  .link ul{
+    display: none;
+  }
+
+  .button{
+    display: none;
+  }
+
+  #menuBar{
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+}
+}
+
+@media(max-width:428px){
+    .logo{
+        width: 100px;
+        height: 60px;
+        left: -2rem;
+        background-size: cover;
+    }
+    
+    .nav{
+        height: fit-content;
+        padding: 0;
+    }
+
+    #menuBar{
+        padding-inline: 1rem;
+    }
+}
