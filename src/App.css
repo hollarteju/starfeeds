@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-align: none;
+  outline: none;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -10,10 +19,11 @@
 
 #header-container {
   display: inline-flex;
-  padding: 0 2rem;
+  padding-left: 3rem;
   justify-content: flex-end;
   align-items: center;
   margin-top: 2rem;
+  width: 100%;
 }
 
 .header-layer {
@@ -51,11 +61,19 @@
 #header-container button {
   padding: 12px 25px;
   border-radius: 12px;
-  border: 2px solid var(--dark-gray);
+  border: 2px solid white;
   background: var(--purple);
   box-shadow: 3px 3pxvar --dark-gray;
   color: white;
   cursor: pointer;
+  transition: tr;
+}
+
+#header-container button:hover {
+  border: 2px solid var(--purple);
+  background: #FFF;
+  box-shadow: 3px 3px var(--purple);
+  color: var(--purple);
 }
 
 .bg-img {
@@ -125,6 +143,8 @@
   position: relative;
   justify-content: center;
   text-align: center;
+  width: 100%;
+  padding-bottom: 80px;
 }
 
 .about-container {
@@ -190,6 +210,8 @@
   align-items: center;
   width: 380px;
   height: 406px;
+  border-radius: 13px;
+  transition: ease 2s;
 }
 .grid-container #story h4,
 .grid-container #vision h4,
@@ -214,13 +236,144 @@
   line-height: 30px; /* 187.5% */
 }
 
+#story:hover {
+  background: #FBE4E7;
+}
+
+#vision:hover {
+  background: #D4D8FE;
+}
+
+#mission:hover {
+  background: #C1F2FF;
+}
+
+#story:hover .story-icon {
+  opacity: 1;
+}
+
+#vision:hover .vision-icon {
+  opacity: 1;
+}
+
+#mission:hover .mission-icon {
+  opacity: 1;
+}
+
+.icon-con {
+  position: absolute;
+  top: 0;
+  transition: transform 2s ease;
+  transform: translateY(4rem);
+}
+
+#mission:hover .icon-con {
+  transform: translateY(3rem);
+}
+
+#story:hover .icon-con {
+  transform: translateY(3rem);
+}
+
+#vision:hover .icon-con {
+  transform: translateY(3rem);
+}
+
+.layer {
+  transition: transform 2s ease;
+}
+
+#story:hover .layer {
+  transform: translateY(7rem);
+}
+
+#mission:hover .layer {
+  transform: translateY(7rem);
+}
+
+#vision:hover .layer {
+  transform: translateY(7rem);
+}
+
+.story-icon {
+  background: url("../public/images/story-icon.png");
+  padding: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+  position: relative;
+  opacity: 0;
+  transition: ease 2s;
+}
+
+.vision-icon {
+  background: url("../public/images/vision-icon.png") !important;
+  padding: 60px !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  margin-bottom: 30px;
+  position: relative;
+  opacity: 0;
+  transition: ease 2s;
+}
+
+.mission-icon {
+  background: url("../public/images/mission-icon.png") !important;
+  padding: 60px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  margin-bottom: 30px;
+  position: relative;
+  opacity: 0;
+  transition: 2s ease;
+}
+
+#offer {
+  width: 100%;
+  height: 1794px;
+  padding: 0px, 0px, 580px, 0px;
+  background: #4D0695;
+  position: relative;
+}
+#offer .offer-header {
+  width: 1029px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 34px;
+  color: #FDFBFF !important;
+  margin: auto;
+  text-align: center;
+  font-family: "Manrope";
+}
+#offer .offer-header h2 {
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+  letter-spacing: -2px;
+}
+#offer .offer-header h6 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 35px; /* 145.833% */
+}
+
 @media (max-width: 1045px) {
   #header-container,
-  #about {
-    width: 1350px;
+  #about,
+  #offer {
+    width: 1350px !important;
   }
 }
 @media (max-width: 884px) {
+  #header-container,
+  #about,
+  #offer {
+    width: 100% !important;
+  }
   #header-container {
     width: 100%;
     height: 546px;
@@ -231,9 +384,6 @@
     margin-top: 0;
     border: 1px solid #000;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../public/images/mobil-bg.png"), lightgray 50%/cover no-repeat;
-  }
-  #about {
-    width: 100%;
   }
   #header p, #header h1 {
     color: white;
@@ -272,15 +422,20 @@
     height: 406px;
     margin-bottom: 16px;
   }
+  .grid-container .icon-con {
+    position: relative;
+    top: -3rem;
+    margin-bottom: 30px;
+  }
   .grid-container #story {
     background: #FBE4E7;
   }
   .grid-container #story .story-icon {
     background: url("../public/images/story-icon.png");
     padding: 80px;
+    opacity: 1;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 30px;
   }
   .grid-container #vision {
     background: #D4D8FE;
@@ -288,9 +443,9 @@
   .grid-container #vision .vision-icon {
     background: url("../public/images/vision-icon.png");
     padding: 80px;
+    opacity: 1;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 30px;
   }
   .grid-container #mission {
     background: #C1F2FF;
@@ -298,9 +453,9 @@
   .grid-container #mission .mission-icon {
     background: url("../public/images/mission-icon.png");
     padding: 80px;
+    opacity: 1;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 30px;
   }
 }
 @media (max-width: 428px) {

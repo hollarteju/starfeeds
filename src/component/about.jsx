@@ -22,30 +22,43 @@ export default function About(){
             </div>
             <div className='grid-container'>
                 <div id="story">
-                    <div className='story-icon'></div>
-                    <h4>Our Story</h4>
-                    <p>
-                        We are passionate about investment, and our 
-                        investment philosophy is in harnessing the power 
-                        of talents to transform ideas into reality.
-                    </p>
+                    <div className='icon-con'>
+                        <div className='story-icon'></div>
+                    </div>
+                    <div className='layer'>
+                        <h4>Our Story</h4>
+                        <p>
+                            We are passionate about investment, and our 
+                            investment philosophy is in harnessing the power 
+                            of talents to transform ideas into reality.
+                        </p>
+                    </div>
                 </div>
                 <div id='mission'>
-                    <div className='mission-icon'></div>
-                    <h4>Our Mission</h4>
-                    <p>
-                        Providing technical capabilities to problem-solvers
-                        to build innovative, futuristic, 
-                        and sustainable solutions while we empower tech talents.
-                    </p>
+                    <div className='icon-con'>
+                        <div className='mission-icon'></div>
+                    </div>
+                   
+                    <div className='layer'>
+                        <h4>Our Mission</h4>
+                        <p>
+                            Providing technical capabilities to problem-solvers
+                            to build innovative, futuristic, 
+                            and sustainable solutions while we empower tech talents.
+                        </p>
+                    </div>
                 </div>
                 <div id='vision'>
-                    <div className='vision-icon'></div>
-                    <h4>Our Vision</h4>
-                    <p>
-                    A world where every great idea meets possibilities to come 
-                    live and becomes a category innovation.
-                    </p>
+                    <div className='icon-con'>
+                        <div className='vision-icon'></div>
+                    </div>
+                    <div className='layer'>
+                        <h4>Our Vision</h4>
+                        <p>
+                        A world where every great idea meets possibilities to come 
+                        live and becomes a category innovation.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>

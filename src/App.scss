@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-align: none;
+  outline: none;
+  // position: relative;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -11,10 +21,11 @@
 
 #header-container{
   display: inline-flex;
-  padding: 0 2rem;
+  padding-left:3rem;
   justify-content: flex-end;
   align-items: center;
   margin-top: 2rem;
+  width: 100%;
 }
 
 .header-layer{
@@ -53,11 +64,20 @@
   // margin-top: 40px;
   padding: 12px 25px;
   border-radius: 12px;
-  border: 2px solid var(--dark-gray);
+  border: 2px solid white;
   background: var(--purple);
   box-shadow: 3px 3pxvar(--dark-gray);
   color: white;
   cursor: pointer;
+  transition: tr;
+
+}
+
+#header-container button:hover{
+  border: 2px solid var(--purple);
+  background: #FFF;
+  box-shadow: 3px 3px var(--purple);
+  color: var(--purple);
 
 }
 
@@ -127,6 +147,8 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
   position: relative;
   justify-content: center;
   text-align: center;
+  width: 100%;
+  padding-bottom: 80px;
   // margin-inline: 2rem
 }
 
@@ -195,6 +217,8 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
   align-items: center;
   width: 380px;
   height: 406px;
+  border-radius: 13px;
+  transition: ease 2s;
 
   h4{
   color: #2E2F35;
@@ -204,6 +228,7 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
   font-style: normal;
   font-weight: 700;
   line-height: 36px; /* 138.462% */
+  
   }
   p{
   color: #58595D;
@@ -217,14 +242,165 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
   }
 }
 
+
+#story:hover{
+  background: #FBE4E7;
+}
+
+#vision:hover{
+  background: #D4D8FE;
+}
+
+#mission:hover{
+  background: #C1F2FF;
+}
+
+#story:hover .story-icon{
+  opacity: 1;
+}
+
+#vision:hover .vision-icon{
+  opacity: 1;
+}
+
+#mission:hover .mission-icon{
+  opacity: 1;
+}
+
+.icon-con{
+  position: absolute;
+  top: 0;
+  transition: transform 2s ease;
+  transform: translateY(4rem)
+}
+
+#mission:hover .icon-con{
+  transform: translateY(3rem);
+}
+
+#story:hover .icon-con{
+  transform: translateY(3rem);
+}
+
+#vision:hover .icon-con{
+  transform: translateY(3rem);
+}
+
+// #story:hover h4{
+//   margin-top: 7rem;
+// }
+
+// #vision:hover h4{
+//   margin-top: 7rem;
+//   transition: ease 2s;
+// }
+
+.layer{
+  transition: transform 2s ease;
+}
+
+#story:hover .layer{
+  transform: translateY(7rem);
+}
+
+#mission:hover .layer{
+  transform: translateY(7rem);
+}
+
+
+#vision:hover .layer{
+  transform: translateY(7rem);
+}
+
+.story-icon{
+  background: url("../public/images/story-icon.png");
+  padding: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+  position: relative;
+  opacity: 0;
+  transition: ease 2s;
+}
+
+.vision-icon{
+  background: url("../public/images/vision-icon.png") !important;
+  padding: 60px !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  margin-bottom: 30px;
+  position: relative;
+  opacity: 0;
+  transition: ease 2s;
+}
+
+
+.mission-icon{
+  background: url("../public/images/mission-icon.png") !important;
+  padding: 60px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  margin-bottom: 30px;
+  position: relative;
+  opacity: 0;
+  transition: 2s ease ;
+  // transform: translateY(6rem);
+}
+
+
+#offer{
+  width:100%;
+  height: 1794px;
+  padding: 0px, 0px, 580px, 0px;
+  background: #4D0695;
+  position: relative;
+  .offer-header{
+    width: 1029px;
+    justify-content: center;
+    flex-direction: column;
+    gap:2rem;
+    padding-top: 34px;
+    color: #FDFBFF !important;
+    margin: auto;
+    text-align: center;
+    font-family: "Manrope";;
+
+    h2{
+      text-align: center;
+      
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 60px; /* 125% */
+      letter-spacing: -2px;
+    }
+
+    h6{
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 35px; /* 145.833% */
+    }
+  }
+}
+
+
+
 @media(max-width:1045px){
   #header-container,
-  #about{
-    width: 1350px;
+  #about,
+  #offer{
+    width: 1350px !important;
   }
 }
 
 @media(max-width:884px){
+
+  #header-container,
+  #about,
+  #offer{
+    width: 100% !important;
+  }
   #header-container{
     width: 100%;
     height: 546px;
@@ -237,9 +413,6 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("../public/images/mobil-bg.png"), lightgray 50% / cover no-repeat;
   }
 
-  #about{
-    width: 100%;
-  }
 
   #header p, #header h1{
     color: white;
@@ -283,8 +456,12 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
     width: 100%;
     height: 406px;
     margin-bottom: 16px;
+  }
 
-   
+  .icon-con{
+    position: relative;
+    top: -3rem;
+    margin-bottom: 30px;
   }
 
   #story{
@@ -293,10 +470,10 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
     .story-icon{
       background: url("../public/images/story-icon.png");
       padding: 80px;
-      // background: url("../public/images/story-icon.png");
+      opacity: 1;
       background-repeat: no-repeat;
       background-size: cover;
-      margin-bottom: 30px;
+
     }
   }
 
@@ -306,9 +483,10 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
       .vision-icon{
         background: url("../public/images/vision-icon.png");
         padding: 80px;
+        opacity: 1;
         background-repeat: no-repeat;
         background-size: cover;
-        margin-bottom: 30px;
+  
       }
     }
 
@@ -318,9 +496,10 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
       .mission-icon{
         background: url("../public/images/mission-icon.png");
         padding: 80px;
+        opacity: 1;
         background-repeat: no-repeat;
         background-size: cover;
-        margin-bottom: 30px;
+  
       }
     }
   
