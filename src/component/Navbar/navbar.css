@@ -114,8 +114,18 @@
   }
 }
 
+@media(max-width:1045px){
+
+  nav{
+    width: 1350px;
+  }
+}
 
 @media(max-width:884px){
+
+  nav{
+    width: 100%;
+  }
 
   .link{
     width: 150px;

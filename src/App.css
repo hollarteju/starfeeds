@@ -214,6 +214,12 @@
   line-height: 30px; /* 187.5% */
 }
 
+@media (max-width: 1045px) {
+  #header-container,
+  #about {
+    width: 1350px;
+  }
+}
 @media (max-width: 884px) {
   #header-container {
     width: 100%;
@@ -225,6 +231,9 @@
     margin-top: 0;
     border: 1px solid #000;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../public/images/mobil-bg.png"), lightgray 50%/cover no-repeat;
+  }
+  #about {
+    width: 100%;
   }
   #header p, #header h1 {
     color: white;

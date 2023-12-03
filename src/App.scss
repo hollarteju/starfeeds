@@ -217,6 +217,13 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
   }
 }
 
+@media(max-width:1045px){
+  #header-container,
+  #about{
+    width: 1350px;
+  }
+}
+
 @media(max-width:884px){
   #header-container{
     width: 100%;
@@ -228,6 +235,10 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
     margin-top: 0;
     border: 1px solid #000;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url("../public/images/mobil-bg.png"), lightgray 50% / cover no-repeat;
+  }
+
+  #about{
+    width: 100%;
   }
 
   #header p, #header h1{
