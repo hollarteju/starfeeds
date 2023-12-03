@@ -396,6 +396,21 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
 
 @media(max-width:884px){
 
+  
+#story:hover .layer{
+  transform: none;
+}
+
+#mission:hover .layer{
+  transform: none;
+}
+
+
+#vision:hover .layer{
+  transform: none;
+}
+
+
   #header-container,
   #about,
   #offer{
@@ -458,10 +473,16 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
     margin-bottom: 16px;
   }
 
+  #story,
+  #vision,
+  #mission:hover{
+    transform: none;
+  }
+
   .icon-con{
     position: relative;
-    top: -3rem;
     margin-bottom: 30px;
+    transform: none;
   }
 
   #story{
@@ -473,6 +494,7 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
       opacity: 1;
       background-repeat: no-repeat;
       background-size: cover;
+      transform: none;
 
     }
   }
@@ -486,6 +508,7 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
         opacity: 1;
         background-repeat: no-repeat;
         background-size: cover;
+        transform: none;
   
       }
     }
@@ -499,6 +522,7 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
         opacity: 1;
         background-repeat: no-repeat;
         background-size: cover;
+        transform: none;
   
       }
     }
