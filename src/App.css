@@ -14,7 +14,7 @@
   --background-end-rgb: 255, 255, 255;
   --gray: #848484;
   --purple:#4D0695;
-  --dark-gray:#2E2F35
+  --dark-gray:#2E2F35;
   --pd-lft:3rem;
 }
 
@@ -370,7 +370,6 @@
 #swiper {
   margin-top: 100px;
   width: 100%;
-  margin-left: 3rem;
   position: relative;
 }
 
@@ -535,6 +534,12 @@
 
 #swiper-works {
   display: none;
+}
+
+#swiper-container {
+  overflow-x: scroll;
+  scrollbar-color: var(--purple);
+  scrollbar-width: 1px;
 }
 
 @media (max-width: 1045px) {
@@ -736,6 +741,9 @@
     font-size: 12px;
     line-height: 20px;
   }
+  #offer {
+    padding-inline: 2rem !important;
+  }
   .offer-header {
     width: 100% !important;
   }
@@ -747,9 +755,6 @@
   .offer-header h6 {
     font-size: 14px !important;
     line-height: 35px !important;
-  }
-  #swiper {
-    margin-left: 2rem;
   }
   .slider-container {
     padding: 16px !important;
@@ -804,7 +809,7 @@
   #swiper-works {
     width: 100%;
     display: flex;
-    margin-top: 15px;
+    margin-top: 10px !important;
   }
   #layer-content {
     background: #F8F5FB;
@@ -832,6 +837,7 @@
   }
   #works-container {
     padding-inline: 2rem;
+    margin-top: 80px !important;
   }
 }
 @media (max-width: 375px) {
@@ -856,5 +862,22 @@
   }
   .works-header h4 {
     font-size: 11px !important;
+  }
+  #offer {
+    padding-left: 1.5rem !important;
+    padding-right: 0 !important;
+  }
+  .offer-header {
+    padding-right: 1.5rem !important;
+  }
+  .offer-header h2 {
+    font-size: 18px !important;
+    line-height: 20px !important;
+    letter-spacing: 0px;
+    padding: 0;
+  }
+  .offer-header h6 {
+    font-size: 10px !important;
+    line-height: 30px !important;
   }
 }/*# sourceMappingURL=App.css.map */

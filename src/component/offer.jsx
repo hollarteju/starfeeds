@@ -52,15 +52,21 @@ export default function Offer(){
     const swiperParams = {
         spaceBetween:30,
         slidesPerView:3.5,
+        simulateTouch: true,
+        touchRatio: 0.2,
+
+        pagination:{
+            el: ".swiper-pag",
+        },
 
         breakpoints: {
 
             1045:{
-              slidesPerView:3.5
+              slidesPerView:3.2
             },
 
             768:{
-                slidesPerView:2
+                slidesPerView:1.8
             },
 
             425:{
@@ -72,7 +78,8 @@ export default function Offer(){
             },
 
             320:{
-                slidesPerView:1
+                slidesPerView:1,
+                spaceBetween:15
             }
         }
         
@@ -104,7 +111,7 @@ export default function Offer(){
                             </SwiperSlide>
                                 ))}
                 </Swiper>
-    
+                <div className='swiper-pag'></div>
             </div>
         </section>
     )
