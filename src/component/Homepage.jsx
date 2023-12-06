@@ -1,6 +1,7 @@
 import React from 'react';
 import About from './about';
 import Offer from './offer';
+import Works from './works';
 
 export default function HomePage(){
     return(
@@ -34,7 +35,8 @@ export default function HomePage(){
                 </div>
             </section>
             <About/>
-            {/* <Offer/> */}
+            <Offer/>
+            <Works/>
         </>
     )
 }
