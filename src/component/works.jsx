@@ -2,6 +2,7 @@ import React from 'react';
 import {Swiper,SwiperSlide} from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "swiper/css";
+import Talents from './talents';
 
 export default function Works(){
     const left_lists = [
@@ -57,13 +58,6 @@ export default function Works(){
 
         },
 
-        {
-            "h2":"Step Six",
-            "h3":"Collaborate and innovate",
-            "p":"From concept to product. We will build something extraordinary with the best minds in the tech industry. StarFeeds is your one-stop launchpad for success.",
-            
-
-        },
 
     ]
 
@@ -157,7 +151,7 @@ export default function Works(){
                     </div>
                     <div className="content">
                         <i className='bx bxs-quote-alt-left'></i>
-                        <p> <span>{list.span}</span> {list.p}</p>
+                        <p> <a>{list.span}</a> {list.p}</p>
                     </div>
                 </div>
                 ))}
@@ -177,13 +171,17 @@ export default function Works(){
                             </div>
                             <div className="content">
                                 <i className='bx bxs-quote-alt-left'></i>
-                                <p> <span>{list.span}</span> {list.p}</p>
+                                <p> <a>{list.span}</a> {list.p}</p>
                             </div>
                         </div>
                     </SwiperSlide>
                                 ))}
                 </Swiper>
         </div>
+
+            {/* how it works for innovators */}
+        <Talents/>
+       
     </section>
     )
 }

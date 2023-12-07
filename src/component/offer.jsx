@@ -33,13 +33,13 @@ export default function Offer(){
             "body" : "Bolster your  resume and portfolio, make  them more appealing to potential employers or clients."
         },
         {
-            "image" : "/images/icon-3.png",
+            "image" : "/images/icon-5.png",
             "header" : "Focused Learning",
             "bg":"#D4D8FE",
             "body" : " Highlight specific areas you may need improvement.  Targeted feedback to guide you in choosing relevant courses and learning resources to enhance your skills."
          },
          {
-            "image" : "/images/icon-3.png",
+            "image" : "/images/icon-6.png",
             "header" : "Networking",
             "bg":"#C1F2FF",
             "body" : " Join communities and forums you can connect with peers, share experiences, and learn from others for valuable insights and collaborative opportunities."
