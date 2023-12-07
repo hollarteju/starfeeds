@@ -84,8 +84,8 @@ export default function Talents(){
        
     }
     return(
-        <section id='works-container' className='px-0 works-container'>
-            <div className='works-header'>
+        <section id='works-container'>
+            <div className='works-header '>
                 <h4>HOW IT WORKS FOR TALENTS</h4>
                 <h1>Are You a Tech Talent? Hone your <span>skills</span> without constraints with StarFeeds</h1>
             </div>
@@ -107,7 +107,7 @@ export default function Talents(){
                 </div>
                 <div className="layer-right" id='layer-right'>
                 {right_lists.map(list=>(
-                        <div id='layer-content'>
+                    <div id='layer-content'>
                             <div className="header">
                                 <h2>{list.h2}</h2>
                                 <h3>{list.h3}</h3>

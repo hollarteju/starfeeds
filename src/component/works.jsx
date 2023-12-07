@@ -2,7 +2,6 @@ import React from 'react';
 import {Swiper,SwiperSlide} from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "swiper/css";
-import Talents from './talents';
 
 export default function Works(){
     const left_lists = [
@@ -180,7 +179,7 @@ export default function Works(){
         </div>
 
             {/* how it works for innovators */}
-        <Talents/>
+      
        
     </section>
     )

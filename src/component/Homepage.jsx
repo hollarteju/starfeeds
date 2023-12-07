@@ -2,6 +2,7 @@ import React from 'react';
 import About from './about';
 import Offer from './offer';
 import Works from './works';
+import Talents from "./talents"
 
 export default function HomePage(){
     return(
@@ -37,6 +38,7 @@ export default function HomePage(){
             <About/>
             <Offer/>
             <Works/>
+            <Talents/>
         </>
     )
 }

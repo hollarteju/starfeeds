@@ -415,11 +415,11 @@
   margin-top: 200px;
   position: relative !important;
   align-items: center !important;
-  padding-inline: 4rem;
+  padding-inline: 3rem;
   text-align: center;
   align-content: center !important;
   display: block;
-  padding-bottom: 260px;
+  padding-bottom: 260px !important;
 }
 #works-container .works-header {
   display: inline-flex;
@@ -456,13 +456,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: relative;
+  width: 100%;
 }
 #works-container .work-layer .layer-left,
 #works-container .work-layer #layer-right {
   margin-top: 30rem !important;
-}
-#works-container .work-layer #layer-right {
-  padding-inline: 3rem !important;
 }
 #works-container .work-layer #layer-left {
   margin-top: 5rem !important;
@@ -557,13 +555,6 @@
     display: none;
   }
 }
-#layer-right {
-  padding-inline: 0 !important;
-}
-#layer-right .content {
-  width: 500px;
-}
-
 @media (max-width: 884px) {
   .work-layer {
     display: none !important;
