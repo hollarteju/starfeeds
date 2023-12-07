@@ -461,6 +461,9 @@
 #works-container .work-layer #layer-right {
   margin-top: 30rem !important;
 }
+#works-container .work-layer #layer-right {
+  padding-inline: 3rem !important;
+}
 #works-container .work-layer #layer-left {
   margin-top: 5rem !important;
 }
