@@ -3,6 +3,8 @@ import About from './about';
 import Offer from './offer';
 import Works from './works';
 import Talents from "./talents"
+import Testimonials from './testimonials';
+import Questions from './questions';
 
 export default function HomePage(){
     return(
@@ -39,6 +41,8 @@ export default function HomePage(){
             <Offer/>
             <Works/>
             <Talents/>
+            <Testimonials/>
+            <Questions/>
         </>
     )
 }

@@ -71,7 +71,7 @@
   box-shadow: 3px 3pxvar(--dark-gray);
   color: white;
   cursor: pointer;
-  transition: tr;
+  transition: 2s ease ;
 
 }
 
@@ -385,8 +385,13 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
       font-weight: 600;
       line-height: 35px; /* 145.833% */
     }
+  
   }
+
+  
 }
+
+
 
 #swiper{
   margin-top: 100px;
@@ -440,7 +445,7 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
 
 #works-container{
   width: 100%;
-  height: 2264px;
+  height: fit-content;
   margin-top:200px;
   position:relative !important;
   align-items: center !important;
@@ -518,6 +523,12 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
 }
 }
 
+.talents-container{
+  height: 1868px !important;
+  padding-bottom: 0 !important;
+  
+}
+
 #layer-content{
   display: flex;
   flex-direction: column;
@@ -591,6 +602,195 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
   scrollbar-width: 1px;
 }
 
+#test-slider{
+  height: 298px;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  justify-content: flex-start;
+}
+
+#testimonials{
+  width: 950px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  
+  font-family: "Manrope";
+  #h6{
+    font-size: 20px;
+  }
+  #h2{
+    line-height:76px ;
+  }
+}
+
+#info{
+  display: flex;
+  width: 316px;
+  justify-content: space-between;
+  position: relative;
+  
+
+  #name{
+    width: 166px;
+    display: flex;
+    position: relative;
+    gap: 16px;
+    font-family: "Manrope";
+
+    
+    div h6{
+    color: #4D0695;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; 
+    padding-top: 0.5rem;
+    }
+
+    div p{
+    color: #58595D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    }
+  }
+
+  #icon i{
+    font-size: 32px;
+    color: #4D0695;
+  }
+}
+
+#body span{
+  width: 348px;
+  color: #58595D;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.testimonials{
+  align-items: center;
+  text-align: center;
+  button{
+    padding: 12px 22px;
+    border-radius: 12px;
+    border: 2px solid #4D0695;
+    background: #FFF;
+    box-shadow: 3px 3px 0px 0px #4D0695;
+    color: #4D0695;
+    margin-top: 7rem;
+    font-family: "Inter";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    transition: 2s ease;
+  }
+
+  button:hover{
+    border: 2px solid #FFF;
+    background: #4D0695;
+    box-shadow: 3px 3px 0px 0px  #FFF;
+    color: #FFF;
+  }
+}
+
+#questions{
+  width: 100%;
+  height: fit-content;
+  padding: 100px 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  font-family: "Manrope";
+  position: relative;
+
+  .question-header{
+    width: 1029px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 3.5rem;
+
+    h4{
+      color: #2E2F35;
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 35px; /* 145.833% */
+    }
+
+    h1{
+      color: #2E2F35;
+      text-align: center;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 60px;
+      letter-spacing: -2px;
+      font-family: "Manrope";
+    }
+  }
+  .contents-container{
+    width: 1240px;
+    display: flex;
+    padding: 10px 16px;
+    align-items: flex-start;
+    gap: 65px;
+    align-self: stretch;
+    border-radius: 5px;
+    background: rgba(77, 6, 149, 0.04);
+    cursor: pointer;
+
+    .layer{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .txt-contents{
+        width: 493px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        span{
+          color: rgba(0, 0, 0, 0.49);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px; /* 150% */
+          letter-spacing: 0.5px;
+          padding-bottom: 2rem !important;
+        }
+        h6{
+          color: #000;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0.5px;
+        }
+      }
+      i{
+        font-size: 20px;
+      }
+    }
+  }
+}
+
 
 
 
@@ -598,18 +798,36 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
   #header-container,
   #about,
   #offer,
-  #works-container{
+  #works-container,
+  #questions{
     width: 1350px !important;
   }
 
   .work-layer{
     display: none;
   }
+
+  .question-header{
+    width: 100% !important;
+
+  }
+  .contents-container{
+    width: 100% !important;
+  }
 }
 
 
 
 @media(max-width:884px){
+
+  #questions{
+    width: 100% !important;
+  }
+
+  #works-container{
+    height: fit-content !important;
+    padding-bottom: 0px !important;
+  }
 
   .work-layer{
     display: none !important;
@@ -790,7 +1008,7 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
   background: #F8F5FB;
   gap: 30px;
   border-radius: 10px;
-  padding: 16px;
+  padding: 16px ;
   h2{
     font-size: 16px;
     
@@ -807,6 +1025,7 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
     padding:0 0.5rem;
     height: 446px;
   }
+  
   .header-layer{
     gap: 16px;
   }
@@ -976,6 +1195,84 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
   margin-top: 80px !important;
 }
 
+#testimonials{
+  #h6{
+    font-size: 12px;
+    line-height: 18px !important;
+  }
+  #h2{
+    font-size: 20px;
+  }
+}
+
+#info{
+  display: flex;
+  width: 316px;
+  justify-content: space-between;
+  position: relative;
+  
+
+  #name{
+
+    img{
+      width: 64px;
+      height: 64px;
+      
+    }
+
+    div h6{
+      line-height: 10px;
+      padding-top: 1rem;
+    }
+
+    div p{
+    font-size: 12px;
+    }
+  }
+}
+
+.testimonials{
+  button{
+    padding: 18px 65px;
+    border: 2px solid #FFF;
+    background: #4D0695;
+    box-shadow: 3px 3px 0px 0px #FFF;
+    color: #FFF;
+  }
+}
+
+
+   .question-header{
+   padding-inline: 0.5rem !important;
+    h1{
+    font-size: 20px !important;
+    line-height: 18px !important;
+    
+    
+    }
+    h4{
+    font-size: 12px !important;
+     line-height: 20px !important;
+    }
+   }
+   .txt-contents{
+        width: 170px !important;
+        span{
+        font-size: 10px !important;
+        padding-bottom: 0rem !important;
+        }
+        h6{
+        font-size: 10px !important;
+        }
+        }
+
+        .layer{
+        i{
+        font-size: 12px !important;
+        
+        }
+        }
+
 }
 
 @media(max-width:375px){
@@ -986,6 +1283,29 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
   span{
     width: 250px !important;
   }
+
+  #info{
+    width: 270px !important;
+
+    #icon i{
+      display: none;
+    }
+
+#name{
+  width: 140px !important;
+
+  div h6{
+    padding-top: 0.3rem !important;
+    line-height: 10px !important;
+  }
+  img{
+    width: 44px !important;
+    height: 44px !important;
+    
+  }
+}
+  }
+
 }
 
 @media(max-width:320px){
@@ -1029,4 +1349,17 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
     line-height: 30px !important;
   }
 }
+
+#info{
+  width: 230px !important;
+}
+
+.testimonials{
+  button{
+    padding: 12px 22px;
+    font-size: 10px;
+    margin-right: 1.5rem;
+  }
+}
+
 }

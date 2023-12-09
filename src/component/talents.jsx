@@ -84,7 +84,7 @@ export default function Talents(){
        
     }
     return(
-        <section id='works-container'>
+        <section id='works-container' className='talents-container'>
             <div className='works-header '>
                 <h4>HOW IT WORKS FOR TALENTS</h4>
                 <h1>Are You a Tech Talent? Hone your <span>skills</span> without constraints with StarFeeds</h1>
