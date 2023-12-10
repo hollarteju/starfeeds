@@ -5,8 +5,9 @@
   margin: 0;
   box-sizing: border-box;
   list-style: none;
-  text-align: none;
+  text-decoration: none;
   outline: none;
+
   // position: relative;
 }
 
@@ -596,11 +597,11 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
   display: none;
 }
 
-#swiper-container{
-  overflow-x: scroll;
-  scrollbar-color: var(--purple);
-  scrollbar-width: 1px;
-}
+// #swiper-container{
+//   overflow-x: scroll;
+//   scrollbar-color: var(--purple);
+//   scrollbar-width: 1px;
+// }
 
 #test-slider{
   height: 298px;
@@ -678,6 +679,8 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
 .testimonials{
   align-items: center;
   text-align: center;
+  
+  margin-top:4rem !important;
   button{
     padding: 12px 22px;
     border-radius: 12px;
@@ -717,7 +720,7 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
   position: relative;
 
   .question-header{
-    width: 1029px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -745,7 +748,7 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
     }
   }
   .contents-container{
-    width: 1240px;
+    width: 100%;
     display: flex;
     padding: 10px 16px;
     align-items: flex-start;
@@ -791,7 +794,153 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
   }
 }
 
+footer{
+  width: 100%;
+  padding: 68px 75px;
+  gap: 70px;
+  background: #4D0695;
+  font-family: "Manrope";
 
+  .footer-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-inline: 1rem;
+  }
+
+  .footer-ads{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: 383px ;
+    padding-inline: 10px;
+  }
+
+  img{
+   border-radius:50%;
+  }
+
+  h6{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 96px; /* 400% */
+  }
+
+  span{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .footer-contents{
+    width: 365px;
+    height: 203px;
+    gap: 103px;
+    display: inline-flex;
+    position: relative;
+  }
+
+  #company{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+
+  p{
+    font-family:" Inter";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 138.462% */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #FFF;
+  }
+
+  ul{
+    font-size: "Manrope";
+    color: #FFF;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  #ul{
+    padding-top:95px !important;
+  }
+
+  li{
+    line-height: 30px;
+  }
+
+  a{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFF;
+  }
+
+  hr{
+    border: 1px solid white;
+    margin-block: 30px;
+  }
+
+  #foot{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+    align-items: center;
+    font-family: "Manrope";
+    padding-inline: 1.5rem;
+  }
+
+  h5{
+    color: #FFF;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .footer-btn{
+    width: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap:24px;
+  }
+
+  #login{
+    padding: 14px 22px;
+    border-radius: 12px;
+    border: 2px solid #FFF;
+    background: #FFF;
+    box-shadow: 3px 3px 0px 0px #2E2F35;
+    color: #4D0695;
+  }
+
+  #signup{
+    padding: 14px 26px;
+    border-radius: 12px;
+    border: 2px solid #FFF;
+    background: #4D0695;
+    box-shadow: 3px 3px 0px 0px #2E2F35;
+    color: #FFF;
+    
+  }
+
+  .footer-contents-mobile{
+    display: none;
+  }
+
+}
 
 
 @media(max-width:1045px){
@@ -799,7 +948,8 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
   #about,
   #offer,
   #works-container,
-  #questions{
+  #questions,
+  footer{
     width: 1350px !important;
   }
 
@@ -927,6 +1077,7 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
   #vision,
   #mission:hover{
     transform: none;
+    transition: none;
   }
 
   .icon-con{
@@ -1016,6 +1167,118 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
 
   
 }
+
+footer{
+  width: 100% !important;
+  height: fit-content;
+  padding: 68px 3rem 1rem 3rem;
+
+  .footer-container{
+    display: block;
+  }
+
+  .footer-ads{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: 100% ;
+    padding-inline: 10px;
+  }
+
+  img{
+   border-radius:50%;
+   width: 100px !important;
+   height: 100px !important;
+  }
+
+  // h6{
+  //   color: #FFF;
+  //   font-size: 24px;
+  //   font-style: normal;
+  //   font-weight: 700;
+  //   line-height: 96px; /* 400% */
+  // }
+
+  span{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .footer-contents{
+    display:none
+  }
+
+  hr{
+
+    display: none;
+  }
+
+  // mobile view on footer
+
+  .footer-contents-mobile{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    gap: 30px;
+  }
+
+  #company-mobile{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-family: "Manrope";
+  }
+
+  .footer-btn{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    width: fit-content;
+    margin-top: 4rem;
+  }
+
+  p{
+    font-size: 14px;
+  }
+
+  #ul{
+    padding-top:0rem !important;
+  }
+
+  li{
+    line-height: 30px;
+  }
+
+  a{
+    font-size: 12px;
+  }
+
+  
+
+  #hr{
+    border: 1px solid white;
+    margin-block: 15px;
+    display: block !important;
+  }
+
+  #foot{
+    display: block;
+  }
+
+  #h6{
+    align-self: center;
+    font-size: 12px;
+  }
+
+  h5{
+    display: none;
+  }
+
+}
+
 }
 
 
@@ -1271,6 +1534,11 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
         font-size: 12px !important;
         
         }
+        }
+
+        footer{
+          width: 100%;
+          padding: 68px 0px;
         }
 
 }

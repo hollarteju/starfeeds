@@ -5,6 +5,7 @@ import Works from './works';
 import Talents from "./talents"
 import Testimonials from './testimonials';
 import Questions from './questions';
+import Footer from './footer';
 
 export default function HomePage(){
     return(
@@ -43,6 +44,7 @@ export default function HomePage(){
             <Talents/>
             <Testimonials/>
             <Questions/>
+            <Footer/>
         </>
     )
 }
