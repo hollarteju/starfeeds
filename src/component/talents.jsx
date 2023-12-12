@@ -2,6 +2,7 @@ import React from 'react';
 import {Swiper,SwiperSlide} from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "swiper/css";
+import {Pagination} from "swiper/modules";
 
 export default function Talents(){
     const left_lists = [
@@ -79,7 +80,9 @@ export default function Talents(){
 
     const swiperParams = {
         spaceBetween:30,
-        slidesPerView:1
+        slidesPerView:1,
+        modules: [Pagination],
+
         
        
     }
@@ -122,7 +125,9 @@ export default function Talents(){
             </div>
             <div id='swiper-works'>
                     <Swiper
+                        id='works-swiper'
                         {...swiperParams}
+                        pagination={{clickable:true}}
                         >
                             {mobile.map(list=>(
                         <SwiperSlide>

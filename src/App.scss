@@ -21,6 +21,26 @@
   --pd-lft:3rem;
 }
 
+.swiper-pagination-container{
+  position: relative !important;
+}
+
+#swiper-container{
+  padding-bottom: 3rem;
+}
+
+.swiper-pagination-bullet{
+  background-color: white !important;
+}
+
+#works-swiper{
+  padding-bottom: 2rem;
+.swiper-pagination-bullet{
+  
+  background-color: var(--purple) !important;
+}
+}
+
 #header-container{
   display: inline-flex;
   padding-left:3rem;
@@ -679,8 +699,7 @@ background: url("../public/images/top-img.png"), lightgray 50% / cover no-repeat
 .testimonials{
   align-items: center;
   text-align: center;
-  
-  margin-top:4rem !important;
+  margin-top: 5rem !important;
   button{
     padding: 12px 22px;
     border-radius: 12px;
@@ -984,16 +1003,17 @@ footer{
   }
   
 #story:hover .layer{
-  transform: none;
+  transform: none !important;
 }
 
 #mission:hover .layer{
-  transform: none;
+  transform: none !important;
 }
 
 
 #vision:hover .layer{
-  transform: none;
+  transform: none !important;
+  transition: none;
 }
 
 
@@ -1337,11 +1357,13 @@ footer{
 
   .offer-header{
     width: 100%!important;
+    padding-inline: 0 !important;
 
   h2{
-    font-size: 20px!important;
+    font-size: 25px!important;
     line-height: 30px !important;
     letter-spacing: 0px;
+    padding-inline: 0 !important;
     
    
   }
@@ -1399,8 +1421,9 @@ footer{
     line-height: 35px;
     }
     h1{
-      font-size: 20px !important;
+      font-size: 25px !important;
       line-height: 30px !important;
+      padding-inline: 0 !important;
     }
   }
 
@@ -1508,7 +1531,7 @@ footer{
    .question-header{
    padding-inline: 0.5rem !important;
     h1{
-    font-size: 20px !important;
+    font-size: 25px !important;
     line-height: 18px !important;
     
     

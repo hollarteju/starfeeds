@@ -17,13 +17,8 @@ function App() {
         <Navbar/>
         <Routes>
           <Route  path="/" element={<HomePage/>}/>
-          {/* <Route  path="/sign_up" element={ <SignUpPage/>}/>
-          <Route  path="/home" element={ <HomePage/>}/> */}
         </Routes>
-
       </Router>
-      
-     
     </div>
   );
 }

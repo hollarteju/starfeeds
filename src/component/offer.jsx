@@ -1,8 +1,8 @@
 import React from 'react';
 import {Swiper,SwiperSlide} from "swiper/react";
+import {Pagination} from "swiper/modules"
 import "swiper/swiper-bundle.css";
 import "swiper/css";
-// import "swiper/css/pagination"
 
 export default function Offer(){
 
@@ -52,17 +52,15 @@ export default function Offer(){
     const swiperParams = {
         spaceBetween:30,
         slidesPerView:3.5,
-        simulateTouch: true,
-        touchRatio: 0.2,
-
-        pagination:{
-            el: ".swiper-pag",
-        },
-
+        modules: [Pagination],
         breakpoints: {
 
             1045:{
-              slidesPerView:3.2
+              slidesPerView:3.2,
+            },
+
+            889:{
+                slidesPerView:3.2,
             },
 
             768:{
@@ -96,6 +94,7 @@ export default function Offer(){
                 <Swiper 
                     id='swiper-container'
                     {...swiperParams}
+                    pagination={{clickable:true}}
                     >
                         {lists.map(list=>(
                                 <SwiperSlide>
@@ -110,8 +109,9 @@ export default function Offer(){
                                 </div>
                             </SwiperSlide>
                                 ))}
+                         
                 </Swiper>
-                <div className='swiper-pag'></div>
+                
             </div>
         </section>
     )

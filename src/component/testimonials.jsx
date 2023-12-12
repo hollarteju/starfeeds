@@ -2,6 +2,7 @@ import React from 'react';
 import {Swiper,SwiperSlide} from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "swiper/css";
+import {Pagination} from "swiper/modules";
 // import "swiper/css/pagination"
 
 export default function Testimonials(){
@@ -48,12 +49,7 @@ export default function Testimonials(){
     const swiperParams = {
         spaceBetween:30,
         slidesPerView:3.5,
-        simulateTouch: true,
-        touchRatio: 0.2,
-
-        pagination:{
-            el: ".swiper-pag",
-        },
+        modules: [Pagination],
 
         breakpoints: {
 
@@ -63,6 +59,10 @@ export default function Testimonials(){
 
             768:{
                 slidesPerView:1.8
+            },
+
+            889:{
+                slidesPerView:3.2,
             },
 
             425:{
@@ -92,6 +92,7 @@ export default function Testimonials(){
                 <Swiper 
                     id='swiper-container'
                     {...swiperParams}
+                    pagination={{clickable:true}}
                     >
                         {lists.map(list=>(
                                 <SwiperSlide>
@@ -120,7 +121,6 @@ export default function Testimonials(){
                             </SwiperSlide>
                                 ))}
                 </Swiper>
-                <div className='swiper-pag'></div>
             </div>
             
             <button>JOIN THE COMMUNITY</button>
